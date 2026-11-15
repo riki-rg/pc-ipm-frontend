@@ -16,7 +16,7 @@ export default function DetailKajianPage({ params }) {
         const fetchData = async () => {
           setLoading(true);
           try {
-            const res = await axios.get(`http://127.0.0.1:8000/api/kajian/${slug}`);
+            const res = await axios.get(`/api/kajian/${slug}`);
             setData(res.data.data);
           } catch (err) {
             console.error(err);
@@ -138,7 +138,7 @@ export default function DetailKajianPage({ params }) {
 
   useEffect(() => {
     if(slug) {
-        axios.get(`http://127.0.0.1:8000/api/kajian/${slug}`)
+        axios.get(`/api/kajian/${slug}`)
              .then(res => setData(res.data.data))
              .catch(err => console.error(err));
     }

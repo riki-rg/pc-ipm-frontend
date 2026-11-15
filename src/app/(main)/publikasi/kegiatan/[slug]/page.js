@@ -17,7 +17,7 @@ export default function DetailKegiatanPage({ params }) {
       try {
         setLoading(true);
         // Tembak API Kegiatan
-        const response = await axios.get(`http://127.0.0.1:8000/api/kegiatan/${slug}`);
+        const response = await axios.get(`/api/kegiatan/${slug}`);
         setData(response.data.data);
       } catch (error) {
         console.error("Gagal load kegiatan:", error);

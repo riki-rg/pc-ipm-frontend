@@ -26,7 +26,7 @@ export default function GaleriPage() {
     const fetchAlbums = async () => {
       try {
         setLoading(true);
-        const response = await axios.get('http://127.0.0.1:8000/api/galeri');
+        const response = await axios.get('/api/galeri');
         setAlbums(response.data.data);
       } catch (error) {
         console.error("Gagal load galeri:", error);

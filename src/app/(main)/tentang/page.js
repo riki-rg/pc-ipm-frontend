@@ -25,7 +25,7 @@ export default function TentangPage() {
 
   useEffect(() => {
     // Tembak API
-    axios.get('http://127.0.0.1:8000/api/bidang')
+    axios.get('/api/bidang')
       .then(res => {
         setBidangs(res.data.data);
         setLoading(false);

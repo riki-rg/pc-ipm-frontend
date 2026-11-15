@@ -1,0 +1,19 @@
+services:
+  pc-ipm-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: pc-ipm-frontend:latest
+    container_name: pc-ipm-frontend
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      NEXT_TELEMETRY_DISABLED: "1"
+    expose:
+      - "3000"
+    networks:
+      - webstack
+
+networks:
+  webstack:
+    external: true

@@ -22,7 +22,7 @@ export default function DetailBeritaPage({ params }) {
       try {
         setLoading(true);
         // Tembak API Berita berdasarkan slug
-        const response = await axios.get(`http://127.0.0.1:8000/api/artikel/${slug}`);
+        const response = await axios.get(`/api/artikel/${slug}`);
         setData(response.data.data);
       } catch (error) {
         console.error("Gagal load berita:", error);

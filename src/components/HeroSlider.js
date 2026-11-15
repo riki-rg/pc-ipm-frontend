@@ -19,7 +19,7 @@ export default function HeroSlider() {
     const fetchSlides = async () => {
       try {
         // Pakai endpoint asli lo
-        const response = await axios.get('http://127.0.0.1:8000/api/hero-slides');
+        const response = await axios.get('/api/hero-slides');
         // Ambil dari response.data.data
         setSlides(response.data.data);
       } catch (error) {

@@ -17,9 +17,9 @@ export default function HomePage() {
         setLoading(true);
         // 1. Tembak 3 API sekaligus biar cepet
         const [resBerita, resKajian, resKegiatan] = await Promise.all([
-          axios.get('http://127.0.0.1:8000/api/artikel'),
-          axios.get('http://127.0.0.1:8000/api/kajian'),
-          axios.get('http://127.0.0.1:8000/api/kegiatan')
+          axios.get('/api/artikel'),
+          axios.get('/api/kajian'),
+          axios.get('/api/kegiatan')
         ]);
 
         // 2. Kasih label "tipe" biar kita tau mana yang berita/kajian/kegiatan

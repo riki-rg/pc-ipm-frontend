@@ -21,7 +21,7 @@ export default function DetailGaleriPage({ params }) {
   // 2. FETCH DATA DETAIL ALBUM
   useEffect(() => {
     if (id) {
-      axios.get(`http://127.0.0.1:8000/api/galeri/${id}`)
+      axios.get(`/api/galeri/${id}`)
         .then(res => {
           setAlbum(res.data.data);
           setLoading(false);

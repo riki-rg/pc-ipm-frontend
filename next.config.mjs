@@ -1,7 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'standalone',
   images: {
     remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'pimpinan.pc-ipm-mayong.web.id',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'pc-ipm-mayong.web.id',
+        pathname: '/**',
+      },
       {
         protocol: 'http',
         hostname: '127.0.0.1',

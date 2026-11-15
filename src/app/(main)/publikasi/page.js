@@ -32,9 +32,9 @@ export default function PublikasiPage() {
       try {
         setLoading(true);
         const [resBerita, resKajian, resKegiatan] = await Promise.all([
-          axios.get('http://127.0.0.1:8000/api/artikel').catch(() => ({ data: { data: [] } })),
-          axios.get('http://127.0.0.1:8000/api/kajian').catch(() => ({ data: { data: [] } })),
-          axios.get('http://127.0.0.1:8000/api/kegiatan').catch(() => ({ data: { data: [] } }))
+          axios.get('/api/artikel').catch(() => ({ data: { data: [] } })),
+          axios.get('/api/kajian').catch(() => ({ data: { data: [] } })),
+          axios.get('/api/kegiatan').catch(() => ({ data: { data: [] } }))
         ]);
 
         // Normalisasi (Samain Struktur)
