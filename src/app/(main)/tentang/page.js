@@ -45,7 +45,8 @@ export default function TentangPage() {
       
       {/* ===== 1. HERO SECTION "TENTANG" ===== */}
       <motion.section
-        className="hero-texture w-full bg-ipm-green-gradient py-20 text-white md:py-24"
+        className="hero-texture w-full py-20 text-white md:py-24"
+        style={{ background: 'linear-gradient(135deg, #0B3D2E 0%, #14532D 100%)' }}
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}

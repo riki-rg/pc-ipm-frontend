@@ -83,7 +83,10 @@ export default function KontakPage() {
     <div className="min-h-screen bg-ipm-paper dark:bg-gray-900">
       <div className="container mx-auto px-6 pt-6"><BackButton /></div>
 
-      <header className="hero-texture mt-5 bg-ipm-green-gradient py-20 text-white md:py-24">
+      <header
+        className="hero-texture mt-5 py-20 text-white md:py-24"
+        style={{ background: 'linear-gradient(135deg, #0B3D2E 0%, #14532D 100%)' }}
+      >
         <div className="container mx-auto px-6">
           <p className="mb-2 text-sm font-semibold text-ipm-yellow">Kontak PC IPM Mayong</p>
           <h1 className="max-w-2xl text-3xl font-extrabold md:text-5xl">Mari mulai percakapan yang baik.</h1>
@@ -103,7 +106,7 @@ export default function KontakPage() {
               <div><label className="mb-2 block text-sm font-bold text-ipm-ink dark:text-white">Nama</label><input {...register('nama')} placeholder="Nama Anda" className="w-full rounded-xl border border-gray-300 bg-white p-3 text-sm outline-none focus:border-ipm-green-deep focus:ring-2 focus:ring-ipm-yellow/40 dark:bg-gray-900" />{errors.nama && <p className="mt-1 text-xs text-red-600">{errors.nama.message}</p>}</div>
               <div><label className="mb-2 block text-sm font-bold text-ipm-ink dark:text-white">Email</label><input {...register('email')} type="email" placeholder="nama@email.com" className="w-full rounded-xl border border-gray-300 bg-white p-3 text-sm outline-none focus:border-ipm-green-deep focus:ring-2 focus:ring-ipm-yellow/40 dark:bg-gray-900" />{errors.email && <p className="mt-1 text-xs text-red-600">{errors.email.message}</p>}</div>
               <div><label className="mb-2 block text-sm font-bold text-ipm-ink dark:text-white">Pesan</label><textarea {...register('pesan')} rows={5} placeholder="Tulis pesan Anda di sini..." className="w-full resize-y rounded-xl border border-gray-300 bg-white p-3 text-sm outline-none focus:border-ipm-green-deep focus:ring-2 focus:ring-ipm-yellow/40 dark:bg-gray-900" />{errors.pesan && <p className="mt-1 text-xs text-red-600">{errors.pesan.message}</p>}</div>
-              <button type="submit" disabled={isSubmitting} className="inline-flex items-center gap-2 rounded-full bg-ipm-green-deep px-6 py-3 text-sm font-bold text-white transition hover:bg-ipm-green-soft disabled:opacity-50"><Send size={16} />{isSubmitting ? 'Mengirim pesan...' : 'Kirim pesan'}</button>
+              <button type="submit" disabled={isSubmitting} className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-ipm-green-deep px-6 py-3.5 text-sm font-bold text-white transition hover:bg-ipm-green-soft disabled:opacity-50"><Send size={17} />{isSubmitting ? 'Mengirim pesan...' : 'Kirim pesan'}</button>
               {submitSuccess && <p className="rounded-xl bg-green-50 p-3 text-sm font-medium text-green-800">Pesan berhasil dikirim. Terima kasih sudah menghubungi kami.</p>}
               {submitError && <p className="rounded-xl bg-red-50 p-3 text-sm font-medium text-red-800">{submitError}</p>}
             </div>
