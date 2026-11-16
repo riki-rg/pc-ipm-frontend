@@ -35,7 +35,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full sticky top-0 z-50 bg-white shadow-md relative dark:bg-gray-900 dark:border-b dark:border-gray-800">
+    <nav className="w-full sticky top-0 z-50 bg-ipm-paper/90 shadow-sm backdrop-blur relative dark:bg-gray-900 dark:border-b dark:border-gray-800">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         
         {/* Logo Dinamis */}

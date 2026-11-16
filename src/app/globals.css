@@ -1,5 +1,48 @@
-/* Nama file: app/globals.css (VERSI BERSIH v3) */
+/* Nama file: app/globals.css */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --ipm-green: #0B3D2E;
+  --ipm-green-soft: #14532D;
+  --ipm-yellow: #FABC05;
+  --paper: #FAFAF5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--paper);
+}
+
+/* Tekstur halus bergerigi (seperti kertas agenda organisasi) di atas hero */
+.hero-texture {
+  background-image: radial-gradient(circle at 1px 1px, rgba(11, 61, 46, 0.07) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+
+/* Garis aksen khas IPM: kuning-hijau */
+.accent-rule {
+  background: linear-gradient(to right, #FABC05, #0B3D2E);
+  height: 4px;
+}
+
+/* Fokus keyboard terlihat jelas */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #FABC05;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}

@@ -16,7 +16,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="w-full bg-gray-900 text-gray-400 dark:bg-gray-900">
+    <footer className="w-full bg-ipm-green-deep text-gray-300">
       <div className="container mx-auto px-6 py-12">
         <div className="flex flex-col items-center text-center md:flex-row md:justify-between">
 
@@ -34,7 +34,7 @@ export default function Footer() {
                 href="https://rizqymaulanahakim.my.id"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium text-yellow-500 hover:text-yellow-400"
+                className="font-medium text-ipm-yellow hover:text-ipm-yellow-light"
               >
                 Rizzy
               </a>

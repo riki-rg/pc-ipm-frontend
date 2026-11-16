@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import axios from 'axios';
-import { motion } from 'framer-motion';
 import HeroSlider from '@/components/HeroSlider';
 
 export default function HomePage() {
@@ -15,28 +14,36 @@ export default function HomePage() {
     const fetchSemuaData = async () => {
       try {
         setLoading(true);
-        // 1. Tembak 3 API sekaligus biar cepet
         const [resBerita, resKajian, resKegiatan] = await Promise.all([
           axios.get('/api/artikel'),
           axios.get('/api/kajian'),
-          axios.get('/api/kegiatan')
+          axios.get('/api/kegiatan'),
         ]);
 
-        // 2. Kasih label "tipe" biar kita tau mana yang berita/kajian/kegiatan
-        const dataBerita = (resBerita.data.data || []).map(item => ({ ...item, tipe: 'Berita', warna: 'bg-yellow-100 text-yellow-700', folder: 'berita' }));
-        const dataKajian = (resKajian.data.data || []).map(item => ({ ...item, tipe: 'Kajian', warna: 'bg-green-100 text-green-700', folder: 'kajian' }));
-        const dataKegiatan = (resKegiatan.data.data || []).map(item => ({ ...item, tipe: 'Kegiatan', warna: 'bg-blue-100 text-blue-700', folder: 'kegiatan' }));
+        const dataBerita = (resBerita.data.data || []).map((item) => ({
+          ...item,
+          tipe: 'Berita',
+          folder: 'berita',
+          warna: 'bg-ipm-yellow/20 text-ipm-yellow-dark',
+        }));
+        const dataKajian = (resKajian.data.data || []).map((item) => ({
+          ...item,
+          tipe: 'Kajian',
+          folder: 'kajian',
+          warna: 'bg-ipm-green/15 text-ipm-green-deep',
+        }));
+        const dataKegiatan = (resKegiatan.data.data || []).map((item) => ({
+          ...item,
+          tipe: 'Kegiatan',
+          folder: 'kegiatan',
+          warna: 'bg-blue-100 text-blue-800',
+        }));
 
-        // 3. Gabungin semua jadi satu array
         const gabungan = [...dataBerita, ...dataKajian, ...dataKegiatan];
-
-        // 4. Urutin dari yang paling baru (berdasarkan created_at)
         const sorted = gabungan.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
-
-        // 5. Ambil 4 teratas buat ditampilin
         setSorotan(sorted.slice(0, 4));
       } catch (error) {
-        console.error("Gagal ambil data sorotan gabungan:", error);
+        console.error('Gagal ambil data sorotan gabungan:', error);
       } finally {
         setLoading(false);
       }
@@ -46,81 +53,170 @@ export default function HomePage() {
   }, []);
 
   const stripHtml = (html) => {
-    if (!html) return "";
-    return html.replace(/<\/?[^>]+(>|$)/g, "").substring(0, 100) + "...";
+    if (!html) return '';
+    return html.replace(/<\/?[^>]+(>|$)/g, '').substring(0, 120) + '...';
   };
 
+  const gambarSrc = (item) =>
+    item.gambar_header_url ? item.gambar_header_url.replace('/uploads/', '/storage/') : '/logo.png';
+
+  const featured = sorotan[0];
+  const sisanya = sorotan.slice(1, 4);
+
   return (
-    <div className="w-full bg-white dark:bg-gray-900">
-      {/* Hero Section */}
-      <section className="container mx-auto flex min-h-[calc(100vh-64px)] flex-col-reverse items-center justify-center px-6 py-12 md:flex-row md:space-x-12">
-        <div className="mt-12 w-full text-center md:mt-0 md:w-1/2 md:text-left">
-          <h1 className="text-4xl font-extrabold text-gray-900 md:text-6xl dark:text-gray-100">
-            Bergerak, Berilmu,<br />
-            <span className="bg-ipm-gradient bg-clip-text text-transparent">Mencerahkan.</span>
-          </h1>
-          <p className="mt-6 text-lg text-gray-600 md:text-xl dark:text-gray-300">
-            Selamat datang di Website resmi PC IPM Mayong. Pusat informasi, kegiatan, dan kajian Ikatan Pelajar Muhammadiyah.
-          </p>
-          <div className="mt-10">
-            <Link href="/tentang" className="rounded-full bg-ipm-gradient px-10 py-4 text-lg font-bold text-gray-900 shadow-lg">
-              Kenali Kami Lebih Jauh
-            </Link>
+    <div className="w-full">
+      {/* ===== HERO: panel hijau tua dengan tekstur, konten asimetris ===== */}
+      <section className="relative overflow-hidden bg-ipm-green-gradient text-white">
+        <div className="hero-texture absolute inset-0 opacity-60" aria-hidden="true" />
+        <div className="relative container mx-auto flex min-h-[calc(100vh-72px)] flex-col-reverse items-center gap-10 px-6 py-16 md:flex-row md:gap-14">
+          <div className="w-full text-center md:w-1/2 md:text-left">
+            <p className="mb-3 text-sm font-semibold tracking-wide text-ipm-yellow">
+              Pimpinan Cabang Ikatan Pelajar Muhammadiyah
+            </p>
+            <h1 className="text-4xl font-extrabold leading-tight md:text-6xl">
+              Bergerak, Berilmu,
+              <br />
+              <span className="text-ipm-yellow">Mencerahkan.</span>
+            </h1>
+            <p className="mx-auto mt-6 max-w-lg text-base leading-relaxed text-gray-200 md:mx-0 md:text-lg">
+              Pusat informasi kegiatan, kajian, dan publikasi resmi PC IPM Mayong —
+              wadah pelajar Muhammadiyah untuk bergerak dan mengilmu bersama.
+            </p>
+            <div className="mt-10 flex flex-wrap justify-center gap-4 md:justify-start">
+              <Link
+                href="/tentang"
+                className="rounded-full bg-ipm-yellow px-8 py-3.5 text-base font-bold text-ipm-green-deep transition-transform hover:scale-105"
+              >
+                Kenali Kami
+              </Link>
+              <Link
+                href="/publikasi"
+                className="rounded-full border-2 border-white/40 px-8 py-3.5 text-base font-semibold text-white transition-colors hover:border-ipm-yellow hover:text-ipm-yellow"
+              >
+                Baca Publikasi
+              </Link>
+            </div>
+          </div>
+          <div className="w-full md:w-1/2">
+            <HeroSlider />
           </div>
         </div>
-        <div className="w-full md:w-1/2">
-          <HeroSlider />
-        </div>
+        <div className="accent-rule absolute bottom-0 left-0 w-full" aria-hidden="true" />
       </section>
 
-      {/* Section Sorotan Dinamis */}
-      <section className="w-full bg-gray-50 py-24 dark:bg-gray-800">
+      {/* ===== SOROTAN: 1 featured besar + 3 kecil ===== */}
+      <section className="w-full py-20">
         <div className="container mx-auto px-6">
-          <h2 className="text-center text-3xl font-bold text-gray-900 dark:text-gray-100">Sorotan Terbaru Kami</h2>
-          <p className="mb-12 mt-4 text-center text-lg text-gray-600 dark:text-gray-300">Campuran berita, kajian, dan kegiatan terbaru dari kami.</p>
+          <div className="mb-10 flex items-end justify-between">
+            <div>
+              <div className="accent-rule mb-4 w-16" aria-hidden="true" />
+              <h2 className="text-3xl font-extrabold text-ipm-ink">Sorotan Terbaru</h2>
+              <p className="mt-2 text-gray-600">
+                Berita, kajian, dan kegiatan terbaru dari kami.
+              </p>
+            </div>
+            <Link
+              href="/publikasi"
+              className="hidden shrink-0 rounded-full border-2 border-ipm-green-deep px-5 py-2 text-sm font-semibold text-ipm-green-deep transition-colors hover:bg-ipm-green-deep hover:text-white sm:block"
+            >
+              Lihat Semua
+            </Link>
+          </div>
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {loading ? (
-              [1, 2, 3, 4].map((n) => (
-                <div key={n} className="h-80 w-full animate-pulse rounded-xl bg-gray-200 dark:bg-gray-700" />
-              ))
-            ) : sorotan.length > 0 ? (
-              sorotan.map((item) => (
-                <motion.div key={`${item.tipe}-${item.id}`} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+          {loading ? (
+            <div className="grid gap-6 lg:grid-cols-2">
+              <div className="h-96 animate-pulse rounded-2xl bg-gray-200" />
+              <div className="grid gap-6">
+                {[1, 2, 3].map((n) => (
+                  <div key={n} className="h-28 animate-pulse rounded-2xl bg-gray-200" />
+                ))}
+              </div>
+            </div>
+          ) : sorotan.length > 0 ? (
+            <div className="grid gap-6 lg:grid-cols-2">
+              {/* Featured */}
+              {featured && (
+                <Link
+                  href={`/publikasi/${featured.folder}/${featured.slug}`}
+                  className="group block overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-shadow hover:shadow-xl"
+                >
+                  <div className="relative aspect-[16/10] w-full bg-gray-100">
+                    <Image
+                      src={gambarSrc(featured)}
+                      alt={featured.judul}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      unoptimized
+                    />
+                    <span
+                      className={`absolute left-4 top-4 rounded-full px-3 py-1 text-xs font-bold ${featured.warna}`}
+                    >
+                      {featured.tipe}
+                    </span>
+                  </div>
+                  <div className="p-6">
+                    <p className="text-xs text-gray-400">
+                      {featured.tanggal_formatted || 'Baru saja'}
+                    </p>
+                    <h3 className="mt-2 line-clamp-2 text-2xl font-bold text-ipm-ink">
+                      {featured.judul}
+                    </h3>
+                    <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-gray-600">
+                      {stripHtml(featured.isi_konten || featured.deskripsi)}
+                    </p>
+                  </div>
+                </Link>
+              )}
+
+              {/* 3 kecil horizontal */}
+              <div className="flex flex-col gap-6">
+                {sisanya.map((item) => (
                   <Link
+                    key={`${item.tipe}-${item.id}`}
                     href={`/publikasi/${item.folder}/${item.slug}`}
-                    // 1. PINDAHIN EFEK ZOOM KE SINI (hover:scale-105)
-                    // Hapus 'hover:-translate-y-2' kalau mau murni zoom, atau gabungin aja gpp.
-                    // Di sini gua ganti translate jadi scale biar "Zoom In" satu badan.
-                    className="group block h-full overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl dark:bg-gray-700"
+                    className="group flex gap-4 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-gray-200 transition-shadow hover:shadow-lg"
                   >
-                    <div className="relative aspect-video w-full bg-gray-200">
+                    <div className="relative h-28 w-36 shrink-0 overflow-hidden rounded-xl bg-gray-100">
                       <Image
-                        src={item.gambar_header_url ? item.gambar_header_url.replace('/uploads/', '/storage/') : '/logo.png'}
+                        src={gambarSrc(item)}
                         alt={item.judul}
                         fill
-                        // 2. HAPUS 'group-hover:scale-110' DARI SINI
-                        // Biar gambarnya diem aja ngikutin kotaknya
-                        className="object-cover"
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
                         unoptimized
                       />
                     </div>
-                    <div className="p-5">
-                      <div className="flex justify-between items-center mb-2">
-                        <span className={`rounded-full px-3 py-1 text-[10px] font-bold uppercase ${item.warna}`}>
+                    <div className="min-w-0 py-1">
+                      <div className="flex items-center gap-2">
+                        <span
+                          className={`rounded-full px-2.5 py-0.5 text-[10px] font-bold ${item.warna}`}
+                        >
                           {item.tipe}
                         </span>
-                        <span className="text-[10px] text-gray-400">{item.tanggal_formatted || 'Baru saja'}</span>
+                        <span className="text-[10px] text-gray-400">
+                          {item.tanggal_formatted || 'Baru saja'}
+                        </span>
                       </div>
-                      <h3 className="mb-2 line-clamp-2 text-lg font-bold text-gray-900 dark:text-gray-100">{item.judul}</h3>
-                      <p className="line-clamp-3 text-xs text-gray-600 dark:text-gray-300">{stripHtml(item.isi_konten || item.deskripsi)}</p>
+                      <h3 className="mt-1.5 line-clamp-2 font-bold leading-snug text-ipm-ink">
+                        {item.judul}
+                      </h3>
+                      <p className="mt-1 line-clamp-2 text-xs text-gray-500">
+                        {stripHtml(item.isi_konten || item.deskripsi)}
+                      </p>
                     </div>
                   </Link>
-                </motion.div>
-              ))
-            ) : (
-              <div className="col-span-full text-center py-10 text-gray-500">Tidak ada data untuk ditampilkan.</div>
-            )}
+                ))}
+              </div>
+            </div>
+          ) : (
+            <div className="rounded-2xl border-2 border-dashed border-gray-300 py-16 text-center text-gray-500">
+              Belum ada publikasi. Nantikan konten dari kami!
+            </div>
+          )}
+
+          <div className="mt-8 text-center sm:hidden">
+            <Link href="/publikasi" className="font-semibold text-ipm-green-deep underline">
+              Lihat semua publikasi
+            </Link>
           </div>
         </div>
       </section>
