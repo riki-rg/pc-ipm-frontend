@@ -3,8 +3,9 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link'; 
-import Image from 'next/image'; // Jangan lupa import Image
-import axios from 'axios';      // Jangan lupa import Axios
+import Image from 'next/image';
+import axios from 'axios';
+import BackButton from '@/components/BackButton';
 
 const kategoriFilter = ['Semua', 'Kegiatan', 'Kajian', 'Lainnya'];
 const ITEMS_PER_PAGE = 6; 
