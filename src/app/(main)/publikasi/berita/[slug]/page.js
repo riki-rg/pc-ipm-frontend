@@ -39,10 +39,10 @@ export default function DetailBeritaPage({ params }) {
   if (!data) return <div className="min-h-screen flex items-center justify-center">Berita tidak ditemukan :(</div>;
 
   return (
-    <div className="bg-white dark:bg-gray-900 min-h-screen
+    <div className="min-h-screen bg-ipm-paper pb-20 dark:bg-gray-900">
       <div className="container mx-auto px-6 pt-6">
         <BackButton />
-      </div> pb-20">
+      </div>
       
       {/* 1. HEADER GAMBAR FULL WIDTH */}
       <div className="relative w-full h-[400px] md:h-[500px]">
