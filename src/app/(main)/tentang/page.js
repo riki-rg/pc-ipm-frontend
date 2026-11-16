@@ -44,19 +44,19 @@ export default function TentangPage() {
       </div>
       
       {/* ===== 1. HERO SECTION "TENTANG" ===== */}
-      {/* Background gradasi kuning udah aman, teksnya aja kita cat */}
-      <motion.section 
-        className="w-full bg-gradient-to-r from-ipm-yellow-dark to-ipm-yellow-light py-24 md:py-32"
+      <motion.section
+        className="hero-texture w-full bg-ipm-green-gradient py-20 text-white md:py-24"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="container mx-auto px-6 text-center">
-          <motion.h1 className="text-4xl font-extrabold text-gray-900 md:text-6xl"> {/* Judul udah item, aman */ }
+        <div className="container mx-auto px-6">
+          <p className="mb-2 text-sm font-semibold text-ipm-yellow">Tentang PC IPM Mayong</p>
+          <motion.h1 className="text-3xl font-extrabold md:text-5xl">
             Tentang Kami
           </motion.h1>
-          <motion.p className="mt-6 text-lg text-gray-800 md:text-xl max-w-3xl mx-auto"> {/* Teks udah item, aman */ }
-            Kami adalah Pimpinan Cabang Ikatan Pelajar Muhammadiyah Mayong...
+          <motion.p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-200 md:text-lg">
+            Kami adalah Pimpinan Cabang Ikatan Pelajar Muhammadiyah Mayong yang bertumbuh bersama pelajar, ilmu, dan nilai keislaman.
           </motion.p>
         </div>
       </motion.section>
@@ -78,11 +78,11 @@ export default function TentangPage() {
             <motion.div variants={itemVariants}>
               <div className="flex items-center mb-4">
                 <span className="text-4xl mr-4">🎯</span>
-                <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100"> {/* 3. "CAT" JUDUL */ }
+                <h2 className="text-3xl font-bold text-white">
                   Visi Kami
                 </h2>
               </div>
-              <p className="text-lg text-gray-700 leading-relaxed dark:text-gray-300"> {/* 4. "CAT" TEKS */ }
+              <p className="text-lg leading-relaxed text-gray-200">
                 &quot;Terwujudnya pelajar Muslim yang berilmu, berakhlak mulia...&quot;
               </p>
             </motion.div>
@@ -91,11 +91,11 @@ export default function TentangPage() {
             <motion.div variants={itemVariants}>
               <div className="flex items-center mb-4">
                 <span className="text-4xl mr-4">✅</span>
-                <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100"> {/* 5. "CAT" JUDUL */ }
+                <h2 className="text-3xl font-bold text-white">
                   Misi Kami
                 </h2>
               </div>
-              <ul className="space-y-3 text-lg text-gray-700 dark:text-gray-300"> {/* 6. "CAT" TEKS LIST */ }
+              <ul className="space-y-3 text-lg text-gray-200">
                 <li className="flex items-start">
                   <span className="text-yellow-500 mr-3 mt-1.5">●</span>
                   <span>Menanamkan nilai-nilai ke-Islam-an...</span>
