@@ -31,8 +31,9 @@ export default function Footer() {
             <p className="mt-2 text-xs">
               Developed by{' '}
               <a
-                href="http://riki-rg.github.io/Portofolio"
-                target="_blank" 
+                href="https://rizqymaulanahakim.my.id"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-medium text-yellow-500 hover:text-yellow-400"
               >
                 Rizzy
