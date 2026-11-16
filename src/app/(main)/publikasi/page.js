@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import BackButton from '@/components/BackButton';
 import Image from 'next/image';
 import axios from 'axios';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -22,7 +23,7 @@ export default function PublikasiPage() {
   const [allData, setAllData] = useState([]);      // Data mentah semua
   const [displayData, setDisplayData] = useState([]); // Data setelah difilter
   const [loading, setLoading] = useState(true);
-  
+
   // State Pagination
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -87,7 +88,7 @@ export default function PublikasiPage() {
 
   const stripHtml = (html) => {
       // 1. Cek kalo datanya kosong (misal Poster), balikin teks default
-      if (!html) return "Klik untuk melihat detail."; 
+      if (!html) return "Klik untuk melihat detail.";
 
       // 2. Hapus tag HTML (<p>, <div>, dll)
       let text = html.replace(/<\/?[^>]+(>|$)/g, "");
@@ -101,6 +102,7 @@ export default function PublikasiPage() {
 
   return (
     <div className="min-h-screen bg-ipm-paper pb-20">
+      <div className="container mx-auto px-6 pt-6 pb-5"><BackButton /></div>
 
       {/* HERO SECTION */}
       <motion.section
@@ -139,7 +141,7 @@ export default function PublikasiPage() {
       {/* GRID KONTEN */}
       <section className="w-full py-16 min-h-[60vh]">
         <div className="container mx-auto px-6">
-          
+
           {loading ? (
              // SKELETON LOADING
              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -214,7 +216,7 @@ export default function PublikasiPage() {
                   >
                     Prev
                   </button>
-                  
+
                   {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
                     <button
                       key={page}

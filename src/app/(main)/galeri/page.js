@@ -64,7 +64,7 @@ export default function GaleriPage() {
 
   return (
     <div className="w-full bg-ipm-paper dark:bg-gray-900">
-      <div className="container mx-auto px-6 pt-6">
+      <div className="container mx-auto px-6 pt-6 pb-5">
         <BackButton />
       </div>
       

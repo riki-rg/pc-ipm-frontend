@@ -53,7 +53,7 @@ export default function DetailKajianPage({ params }) {
 
   return (
     <div className="min-h-screen bg-ipm-paper pb-20 dark:bg-gray-900">
-      <div className="container mx-auto px-6 pt-6"><BackButton label="Kembali ke publikasi" /></div>
+      <div className="container mx-auto px-6 pt-6 pb-5"><BackButton label="Kembali ke publikasi" /></div>
       <header className="relative mt-5 h-[380px] overflow-hidden md:h-[480px]">
         {imageUrl ? <Image src={imageUrl} alt={data.judul} fill className="object-cover" priority unoptimized /> : <div className="h-full bg-ipm-green-deep" />}
         <div className="absolute inset-0 bg-ipm-green-deep/70" />

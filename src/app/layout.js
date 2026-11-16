@@ -12,6 +12,7 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata = {
   title: 'PC IPM Mayong',
   description: 'Website Resmi Pimpinan Cabang Ikatan Pelajar Muhammadiyah Mayong',
+  icons: { icon: [{ url: '/favicon', type: 'image/png' }] },
 };
 
 export default function RootLayout({ children }) {

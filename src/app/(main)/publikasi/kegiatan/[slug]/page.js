@@ -35,7 +35,7 @@ export default function DetailKegiatanPage({ params }) {
 
   return (
     <div className="min-h-screen bg-ipm-paper pb-20 dark:bg-gray-900">
-      <div className="container mx-auto px-6 pt-6">
+      <div className="container mx-auto px-6 pt-6 pb-5">
         <BackButton />
       </div>
       
