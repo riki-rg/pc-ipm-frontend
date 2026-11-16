@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'; 
 import axios from 'axios';
+import BackButton from '@/components/BackButton';
 import { motion, AnimatePresence } from 'framer-motion'; 
 import AnimatedCounter from '@/components/AnimatedCounter'; 
 import BidangModal from '@/components/BidangModal';
@@ -37,7 +38,10 @@ export default function TentangPage() {
   }, []);
 
   return (
-    <div className="w-full bg-white dark:bg-gray-900">
+    <div className="w-full bg-ipm-paper dark:bg-gray-900">
+      <div className="container mx-auto px-6 pt-6">
+        <BackButton />
+      </div>
       
       {/* ===== 1. HERO SECTION "TENTANG" ===== */}
       {/* Background gradasi kuning udah aman, teksnya aja kita cat */}
@@ -60,7 +64,7 @@ export default function TentangPage() {
       
       {/* ===== 2. SECTION VISI & MISI ===== */}
       {/* Section ini background-nya 'bg-white', jadi harus kita cat */}
-      <section className="w-full bg-white py-24 dark:bg-gray-900"> {/* 2. "CAT" SECTION */ }
+      <section className="relative overflow-hidden bg-ipm-green-gradient pt-20 pb-16 text-white"> {/* 2. "CAT" SECTION */ }
         <motion.div
           className="container mx-auto px-6"
           initial="hidden"

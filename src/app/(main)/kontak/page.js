@@ -9,6 +9,7 @@ import { z } from 'zod';
 import { apiService } from '@/services/api';
 // 1. IMPORT ICON YANG DIPAKE AJA
 import { Instagram, Youtube } from 'lucide-react';
+import BackButton from '@/components/BackButton';
 
 // Form validation schema
 const contactSchema = z.object({
@@ -95,20 +96,23 @@ export default function KontakPage() {
   };
 
   return (
-    <div className="w-full bg-white dark:bg-gray-900">
+    <div className="w-full bg-ipm-paper dark:bg-gray-900">
+      <div className="container mx-auto px-6 pt-6">
+        <BackButton />
+      </div>
       
       {/* 1. HERO SECTION */}
       <motion.section 
-        className="w-full bg-white pt-24 pb-16 dark:bg-gray-900"
+        className="relative overflow-hidden bg-ipm-green-gradient pt-20 pb-16 text-white"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
         <div className="container mx-auto px-6 text-center">
-          <motion.h1 className="text-4xl font-extrabold text-gray-900 md:text-6xl dark:text-gray-100">
+          <motion.h1 className="text-3xl font-extrabold md:text-5xl text-white">
             Hubungi Kami
           </motion.h1>
-          <motion.p className="mt-6 text-lg text-gray-600 md:text-xl max-w-3xl mx-auto dark:text-gray-300">
+          <motion.p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-200 md:text-lg">
             {setting?.deskripsi_singkat || "Punya pertanyaan, saran, atau ide kolaborasi? Jangan ragu untuk menghubungi kami."}
           </motion.p>
         </div>

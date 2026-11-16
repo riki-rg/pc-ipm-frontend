@@ -3,6 +3,7 @@
 import { useEffect, useState, use } from 'react'; // Pakai 'use' buat params
 import Image from 'next/image';
 import axios from 'axios';
+import BackButton from '@/components/BackButton';
 import { Calendar, MapPin, Clock, Users } from 'lucide-react'; // Icon lengkap
 
 export default function DetailKegiatanPage({ params }) {
@@ -33,7 +34,10 @@ export default function DetailKegiatanPage({ params }) {
   if (!data) return <div className="min-h-screen flex items-center justify-center">Kegiatan tidak ditemukan :(</div>;
 
   return (
-    <div className="bg-white dark:bg-gray-900 min-h-screen pb-20">
+    <div className="bg-white dark:bg-gray-900 min-h-screen
+      <div className="container mx-auto px-6 pt-6">
+        <BackButton />
+      </div> pb-20">
       
       {/* 1. HEADER GAMBAR */}
       <div className="relative w-full h-[400px] md:h-[500px]">

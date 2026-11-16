@@ -39,15 +39,15 @@ export default function PublikasiPage() {
 
         // Normalisasi (Samain Struktur)
         const berita = (resBerita.data.data || []).map(item => ({
-          ...item, type: 'berita', label: 'Berita', color: 'bg-yellow-100 text-yellow-700',
+          ...item, type: 'berita', label: 'Berita', color: 'bg-ipm-yellow/20 text-ipm-yellow-dark',
           dateSort: new Date(item.created_at), desc: stripHtml(item.isi_konten)
         }));
         const kajian = (resKajian.data.data || []).map(item => ({
-          ...item, type: 'kajian', label: 'Kajian', color: 'bg-green-100 text-green-700',
+          ...item, type: 'kajian', label: 'Kajian', color: 'bg-ipm-green/15 text-ipm-green-deep',
           dateSort: new Date(item.waktu), desc: stripHtml(item.deskripsi)
         }));
         const kegiatan = (resKegiatan.data.data || []).map(item => ({
-          ...item, type: 'kegiatan', label: 'Kegiatan', color: 'bg-blue-100 text-blue-700',
+          ...item, type: 'kegiatan', label: 'Kegiatan', color: 'bg-blue-100 text-blue-800',
           dateSort: new Date(item.waktu), desc: stripHtml(item.deskripsi)
         }));
 
@@ -100,31 +100,33 @@ export default function PublikasiPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 pb-20">
-      
+    <div className="min-h-screen bg-ipm-paper pb-20">
+
       {/* HERO SECTION */}
-      <motion.section 
-        className="w-full bg-white pt-24 pb-16 dark:bg-gray-900"
+      <motion.section
+        className="w-full bg-ipm-green-gradient pt-20 pb-16 text-white"
         initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}
       >
-        <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl font-extrabold text-gray-900 md:text-6xl dark:text-gray-100">Publikasi Kami</h1>
-          <p className="mt-6 text-lg text-gray-600 md:text-xl max-w-3xl mx-auto dark:text-gray-300">
+        <div className="hero-texture absolute inset-0 opacity-0" aria-hidden="true" />
+        <div className="relative container mx-auto px-6">
+          <p className="mb-2 text-sm font-semibold text-ipm-yellow">Publikasi</p>
+          <h1 className="text-3xl font-extrabold md:text-5xl">Publikasi Kami</h1>
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-200 md:text-lg">
             Jelajahi berita terbaru, kajian mendalam, dan rangkuman kegiatan seru dari PC IPM Mayong.
           </p>
         </div>
       </motion.section>
 
       {/* FILTER BAR (Sticky) */}
-      <section className="w-full py-4 sticky top-[64px] z-40 bg-white/90 backdrop-blur-md border-b border-gray-200 dark:bg-gray-900/90 dark:border-gray-800 transition-colors">
+      <section className="w-full py-4 sticky top-[64px] z-40 bg-ipm-paper/90 backdrop-blur-md border-b border-gray-200 transition-colors">
         <div className="container mx-auto px-6 flex justify-center gap-3 flex-wrap">
           {categories.map((cat) => (
             <button
               key={cat.id}
               onClick={() => setActiveTab(cat.id)}
               className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
-                activeTab === cat.id 
-                ? 'bg-ipm-gradient text-gray-900 shadow-md scale-105' 
+                activeTab === cat.id
+                ? 'bg-ipm-green-deep text-white shadow-md scale-105'
                 : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700'
               }`}
             >
@@ -135,7 +137,7 @@ export default function PublikasiPage() {
       </section>
 
       {/* GRID KONTEN */}
-      <section className="w-full bg-gray-50 py-16 min-h-[60vh] dark:bg-gray-800">
+      <section className="w-full py-16 min-h-[60vh]">
         <div className="container mx-auto px-6">
           
           {loading ? (
@@ -182,7 +184,7 @@ export default function PublikasiPage() {
                           <div className="text-xs text-gray-400 mb-2 flex items-center gap-2">
                              📅 {item.tanggal_formatted || 'Baru saja'}
                           </div>
-                          <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-3 line-clamp-2 group-hover:text-yellow-600 transition-colors">
+                          <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-3 line-clamp-2 group-hover:text-ipm-green-soft transition-colors">
                             {item.judul}
                           </h3>
                           <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-3">
@@ -219,7 +221,7 @@ export default function PublikasiPage() {
                       onClick={() => goToPage(page)}
                       className={`w-10 h-10 rounded-lg font-bold transition-all ${
                         currentPage === page
-                          ? 'bg-ipm-yellow-main text-black shadow-md scale-110'
+                          ? 'bg-ipm-green-deep text-white shadow-md scale-110'
                           : 'bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 hover:bg-gray-50'
                       }`}
                     >

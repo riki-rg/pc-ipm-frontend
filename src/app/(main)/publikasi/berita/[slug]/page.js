@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import axios from 'axios';
+import BackButton from '@/components/BackButton';
 import { usePathname } from 'next/navigation'; // Buat ngecek URL
 import { Calendar, User, MapPin, Clock } from 'lucide-react'; // Icon biar cakep
 
@@ -38,7 +39,10 @@ export default function DetailBeritaPage({ params }) {
   if (!data) return <div className="min-h-screen flex items-center justify-center">Berita tidak ditemukan :(</div>;
 
   return (
-    <div className="bg-white dark:bg-gray-900 min-h-screen pb-20">
+    <div className="bg-white dark:bg-gray-900 min-h-screen
+      <div className="container mx-auto px-6 pt-6">
+        <BackButton />
+      </div> pb-20">
       
       {/* 1. HEADER GAMBAR FULL WIDTH */}
       <div className="relative w-full h-[400px] md:h-[500px]">

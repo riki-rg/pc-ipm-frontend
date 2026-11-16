@@ -3,6 +3,7 @@
 import { useEffect, useState, use } from 'react';
 import Image from 'next/image';
 import axios from 'axios';
+import BackButton from '@/components/BackButton';
 import { Calendar, MapPin, UserCheck } from 'lucide-react'; 
 
 export default function DetailKajianPage({ params }) {
@@ -36,7 +37,10 @@ export default function DetailKajianPage({ params }) {
   // ==========================================
   if (data.jenis === 'poster') {
     return (
-      <div className="bg-gray-900 min-h-screen flex flex-col items-center py-10 px-4">
+      <div className="bg-gray-900 min-h-screen
+        <div className="container mx-auto px-6 pt-6">
+          <BackButton />
+        </div> flex flex-col items-center py-10 px-4">
         
         {/* Label Mode */}
         <div className="mb-6">

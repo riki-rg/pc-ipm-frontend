@@ -6,6 +6,7 @@ import Link from 'next/link';
 import axios from 'axios';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar, ArrowLeft, X, ZoomIn } from 'lucide-react';
+import BackButton from '@/components/BackButton';
 
 export default function DetailGaleriPage({ params }) {
   // 1. Unwrap Params (Wajib di Next.js baru)
@@ -41,6 +42,9 @@ export default function DetailGaleriPage({ params }) {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 pb-20">
+      <div className="container mx-auto px-6 pt-6">
+        <BackButton />
+      </div>
       
       {/* ===== 1. HERO HEADER (COVER ALBUM) ===== */}
       <div className="relative w-full h-[50vh] md:h-[60vh] flex items-end">
