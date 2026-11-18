@@ -1,0 +1,296 @@
+{
+  "/opt/data/pc-ipm/pc-ipm-frontend/docker-compose.yml": {
+    "mtime": 1794766339.3043764,
+    "seen": 1794965586.8526611,
+    "ast_hash": "8b328a28e88a491356ea16dafbca4e50",
+    "semantic_hash": "8b328a28e88a491356ea16dafbca4e50"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/eslint.config.mjs": {
+    "mtime": 1794716105.4748936,
+    "seen": 1794965586.8526673,
+    "ast_hash": "bcb00e240634dd9448e57386fdff1902",
+    "semantic_hash": "bcb00e240634dd9448e57386fdff1902"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/jsconfig.json": {
+    "mtime": 1794716105.4748936,
+    "seen": 1794965586.852671,
+    "ast_hash": "373b4d3b81ad935084b8292c8233423e",
+    "semantic_hash": "373b4d3b81ad935084b8292c8233423e"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/next.config.mjs": {
+    "mtime": 1794766339.4963753,
+    "seen": 1794965586.8526742,
+    "ast_hash": "85bf13938341ff8957054ffee4530fe8",
+    "semantic_hash": "85bf13938341ff8957054ffee4530fe8"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/package.json": {
+    "mtime": 1794716105.4768937,
+    "seen": 1794965586.8526769,
+    "ast_hash": "f8c87e046fca6d20ea6443577115a820",
+    "semantic_hash": "f8c87e046fca6d20ea6443577115a820"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/postcss.config.js": {
+    "mtime": 1794716105.4768937,
+    "seen": 1794965586.8526793,
+    "ast_hash": "854b38759e7a8b4b82306ae2d9a3a833",
+    "semantic_hash": "854b38759e7a8b4b82306ae2d9a3a833"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/postcss.config.mjs": {
+    "mtime": 1794716105.4768937,
+    "seen": 1794965586.8526819,
+    "ast_hash": "239f3ebf717465dc636818a1a619398d",
+    "semantic_hash": "239f3ebf717465dc636818a1a619398d"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/app/(main)/galeri/[id]/page.js": {
+    "mtime": 1794835788.79834,
+    "seen": 1794965586.8526847,
+    "ast_hash": "add71379262336f2b049137d008c715e",
+    "semantic_hash": "add71379262336f2b049137d008c715e"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/app/(main)/galeri/page.js": {
+    "mtime": 1794835788.0273438,
+    "seen": 1794965586.8526871,
+    "ast_hash": "c568d6ce76227f2cdb7a6c9b351a0bf2",
+    "semantic_hash": "c568d6ce76227f2cdb7a6c9b351a0bf2"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/app/(main)/home/page.js": {
+    "mtime": 1794803317.8125212,
+    "seen": 1794965586.8526895,
+    "ast_hash": "9f53087c9acf5a920efa61ed9d1d2930",
+    "semantic_hash": "9f53087c9acf5a920efa61ed9d1d2930"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/app/(main)/kontak/page.js": {
+    "mtime": 1794830611.7942991,
+    "seen": 1794965586.8526917,
+    "ast_hash": "20650dada00ae6bbd67c2f6ed3d09d15",
+    "semantic_hash": "20650dada00ae6bbd67c2f6ed3d09d15"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/app/(main)/layout.js": {
+    "mtime": 1794716105.4938936,
+    "seen": 1794965586.8526945,
+    "ast_hash": "bc7dd6ae7e0be6f6265e1a09e0b79e72",
+    "semantic_hash": "bc7dd6ae7e0be6f6265e1a09e0b79e72"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/app/(main)/publikasi/berita/[slug]/page.js": {
+    "mtime": 1794835789.5393367,
+    "seen": 1794965586.852697,
+    "ast_hash": "992896c32e233dcf0351c42981ff8486",
+    "semantic_hash": "992896c32e233dcf0351c42981ff8486"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/app/(main)/publikasi/kajian/[slug]/page.js": {
+    "mtime": 1794835791.1483293,
+    "seen": 1794965586.852699,
+    "ast_hash": "01709b4e8edffb21bf5f9329fb5f1039",
+    "semantic_hash": "01709b4e8edffb21bf5f9329fb5f1039"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/app/(main)/publikasi/kegiatan/[slug]/page.js": {
+    "mtime": 1794835790.3893328,
+    "seen": 1794965586.8527017,
+    "ast_hash": "4a54203fdc900f3d2c0bdac95a30ff29",
+    "semantic_hash": "4a54203fdc900f3d2c0bdac95a30ff29"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/app/(main)/publikasi/page.js": {
+    "mtime": 1794836046.6641803,
+    "seen": 1794965586.852704,
+    "ast_hash": "039521aad4dbe382005714d73a285dbc",
+    "semantic_hash": "039521aad4dbe382005714d73a285dbc"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/app/(main)/tentang/page.js": {
+    "mtime": 1794835787.2433472,
+    "seen": 1794965586.8527062,
+    "ast_hash": "44763fb4854b0659116713e986bd9aed",
+    "semantic_hash": "44763fb4854b0659116713e986bd9aed"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/app/error.js": {
+    "mtime": 1794716105.4958935,
+    "seen": 1794965586.8527088,
+    "ast_hash": "cfc5796631f6c460aa9e0616e344e502",
+    "semantic_hash": "cfc5796631f6c460aa9e0616e344e502"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/app/favicon/route.js": {
+    "mtime": 1794835861.124005,
+    "seen": 1794965586.852711,
+    "ast_hash": "6cb373b59996bf4d322a8c5d17fbf1db",
+    "semantic_hash": "6cb373b59996bf4d322a8c5d17fbf1db"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/app/global-error.js": {
+    "mtime": 1794716105.4958935,
+    "seen": 1794965586.852713,
+    "ast_hash": "69d35c724199206ea2ec680e747064e0",
+    "semantic_hash": "69d35c724199206ea2ec680e747064e0"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/app/layout.js": {
+    "mtime": 1794837729.2945158,
+    "seen": 1794965586.852716,
+    "ast_hash": "826896d4a57a299d507950d4f10576e7",
+    "semantic_hash": "826896d4a57a299d507950d4f10576e7"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/app/page.js": {
+    "mtime": 1794716105.4958935,
+    "seen": 1794965586.8527184,
+    "ast_hash": "a423c36d280a2800cc24a249af66ced1",
+    "semantic_hash": "a423c36d280a2800cc24a249af66ced1"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/app/robots.js": {
+    "mtime": 1794880355.1364167,
+    "seen": 1794965586.8527212,
+    "ast_hash": "8acd4b1da8bf16d729be3f66adb7bbf1",
+    "semantic_hash": "8acd4b1da8bf16d729be3f66adb7bbf1"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/app/sitemap.js": {
+    "mtime": 1794880355.1361275,
+    "seen": 1794965586.8527234,
+    "ast_hash": "53a13eace8cb060bdfff471f0b41e5b8",
+    "semantic_hash": "53a13eace8cb060bdfff471f0b41e5b8"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/components/AnimatedCounter.js": {
+    "mtime": 1794716105.4968936,
+    "seen": 1794965586.8527257,
+    "ast_hash": "4154a1ca58a301c4f657511600482721",
+    "semantic_hash": "4154a1ca58a301c4f657511600482721"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/components/BackButton.js": {
+    "mtime": 1794803165.9953697,
+    "seen": 1794965586.852728,
+    "ast_hash": "53e6899acce42270e9b824f743f79ccc",
+    "semantic_hash": "53e6899acce42270e9b824f743f79ccc"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/components/BidangModal.js": {
+    "mtime": 1794716105.4973342,
+    "seen": 1794965586.8527303,
+    "ast_hash": "31cfe51047e25b79d838bd06b9732b8b",
+    "semantic_hash": "31cfe51047e25b79d838bd06b9732b8b"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/components/Footer.js": {
+    "mtime": 1794802067.2534473,
+    "seen": 1794965586.8527327,
+    "ast_hash": "0fab7a223c000fa30f231a72b019e505",
+    "semantic_hash": "0fab7a223c000fa30f231a72b019e505"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/components/HeroSlider.js": {
+    "mtime": 1794766301.586753,
+    "seen": 1794965586.8527355,
+    "ast_hash": "9ee4c5298d0394af47847c36a3346098",
+    "semantic_hash": "9ee4c5298d0394af47847c36a3346098"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/components/Navbar.js": {
+    "mtime": 1794838979.940919,
+    "seen": 1794965586.852738,
+    "ast_hash": "238d8bc74e389796499c990e17769461",
+    "semantic_hash": "238d8bc74e389796499c990e17769461"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/components/PageHeader.js": {
+    "mtime": 1794803182.4592931,
+    "seen": 1794965586.85274,
+    "ast_hash": "ca58141dbdd65fb3c04cfb942afd9af1",
+    "semantic_hash": "ca58141dbdd65fb3c04cfb942afd9af1"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/components/ThemeProvider.js": {
+    "mtime": 1794716105.4973342,
+    "seen": 1794965586.8527424,
+    "ast_hash": "d8c25a60a0b952256bfd18bb0e4d379e",
+    "semantic_hash": "d8c25a60a0b952256bfd18bb0e4d379e"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/components/ThemeSwitcher.js": {
+    "mtime": 1794837729.2947931,
+    "seen": 1794965586.8527448,
+    "ast_hash": "2a5bbdcefb5157dd65d9f73d439c8a09",
+    "semantic_hash": "2a5bbdcefb5157dd65d9f73d439c8a09"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/components/ui/LoadingSkeleton.jsx": {
+    "mtime": 1794716105.4978936,
+    "seen": 1794965586.8527472,
+    "ast_hash": "76a1847c6ca3c7214a89738358b26357",
+    "semantic_hash": "76a1847c6ca3c7214a89738358b26357"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/components/ui/PageLoader.jsx": {
+    "mtime": 1794716105.498215,
+    "seen": 1794965586.8527496,
+    "ast_hash": "8416f8a611ad462c395bce1600ba41ce",
+    "semantic_hash": "8416f8a611ad462c395bce1600ba41ce"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/components/ui/index.js": {
+    "mtime": 1794716105.498215,
+    "seen": 1794965586.852752,
+    "ast_hash": "b4e8c806e2bbc77b42839d2832c46579",
+    "semantic_hash": "b4e8c806e2bbc77b42839d2832c46579"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/lib/axios.js": {
+    "mtime": 1794716105.498215,
+    "seen": 1794965586.852754,
+    "ast_hash": "29a0d22db2b677a7d786df838c1c3997",
+    "semantic_hash": "29a0d22db2b677a7d786df838c1c3997"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/lib/image.js": {
+    "mtime": 1794766324.0754483,
+    "seen": 1794965586.8527565,
+    "ast_hash": "67fc823a0c8e406a6e555dfa4fd48e6f",
+    "semantic_hash": "67fc823a0c8e406a6e555dfa4fd48e6f"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/services/api.js": {
+    "mtime": 1794766324.125448,
+    "seen": 1794965586.852759,
+    "ast_hash": "4af57a50d8cc06f39579bc2846fa9df7",
+    "semantic_hash": "4af57a50d8cc06f39579bc2846fa9df7"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/src/services/endpoints.js": {
+    "mtime": 1794716105.4988065,
+    "seen": 1794965586.8527608,
+    "ast_hash": "30daa2055c86575c8be59ca0f1b0cfb9",
+    "semantic_hash": "30daa2055c86575c8be59ca0f1b0cfb9"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/tailwind.config.js": {
+    "mtime": 1794801976.7918603,
+    "seen": 1794965586.8527632,
+    "ast_hash": "e11a0a876ee8b9ea24f5614404e1d971",
+    "semantic_hash": "e11a0a876ee8b9ea24f5614404e1d971"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/README.md": {
+    "mtime": 1794716105.4748936,
+    "seen": 1794965586.852765,
+    "ast_hash": "b4d758c60197e66468dc866f8166da2f",
+    "semantic_hash": "b4d758c60197e66468dc866f8166da2f"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/public/file.svg": {
+    "mtime": 1794716105.4778936,
+    "seen": 1794965586.8527675,
+    "ast_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71",
+    "semantic_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/public/foto-kami.jpg": {
+    "mtime": 1794716105.4908936,
+    "seen": 1794965586.8527718,
+    "ast_hash": "84b4b439bdf66e45a40c43bfeb84f470",
+    "semantic_hash": "84b4b439bdf66e45a40c43bfeb84f470"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/public/globe.svg": {
+    "mtime": 1794716105.4908936,
+    "seen": 1794965586.8527744,
+    "ast_hash": "2aaafa6a49b6563925fe440891e32717",
+    "semantic_hash": "2aaafa6a49b6563925fe440891e32717"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/public/logo.png": {
+    "mtime": 1794716105.4918935,
+    "seen": 1794965586.8527768,
+    "ast_hash": "1a5b5ea925e0c08ab501de52149c6655",
+    "semantic_hash": "1a5b5ea925e0c08ab501de52149c6655"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/public/next.svg": {
+    "mtime": 1794716105.4928937,
+    "seen": 1794965586.8527784,
+    "ast_hash": "8e061864f388b47f33a1c3780831193e",
+    "semantic_hash": "8e061864f388b47f33a1c3780831193e"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/public/vercel.svg": {
+    "mtime": 1794716105.4928937,
+    "seen": 1794965586.8527808,
+    "ast_hash": "c0af2f507b369b085b35ef4bbe3bcf1e",
+    "semantic_hash": "c0af2f507b369b085b35ef4bbe3bcf1e"
+  },
+  "/opt/data/pc-ipm/pc-ipm-frontend/public/window.svg": {
+    "mtime": 1794716105.4928937,
+    "seen": 1794965586.8527832,
+    "ast_hash": "a2760511c65806022ad20adf74370ff3",
+    "semantic_hash": "a2760511c65806022ad20adf74370ff3"
+  }
+}

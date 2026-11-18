@@ -1,0 +1,3162 @@
+{
+  "nodes": [
+    {
+      "id": "g0",
+      "type": "group",
+      "label": "Next.js Dependencies & ESLint Config",
+      "x": 0,
+      "y": 0,
+      "width": 1540,
+      "height": 720,
+      "color": "1"
+    },
+    {
+      "id": "n_ref_headlessui_react",
+      "type": "file",
+      "file": "@headlessuireact.md",
+      "x": 20,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_headlessui_react",
+      "type": "file",
+      "file": "@headlessuireact@2.2.9.md",
+      "x": 220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_tailwindcss_postcss",
+      "type": "file",
+      "file": "@tailwindcsspostcss.md",
+      "x": 420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_tailwindcss_postcss",
+      "type": "file",
+      "file": "@tailwindcsspostcss@4.md",
+      "x": 620,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_autoprefixer",
+      "type": "file",
+      "file": "autoprefixer.md",
+      "x": 820,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_autoprefixer",
+      "type": "file",
+      "file": "autoprefixer@10.4.22.md",
+      "x": 1020,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_axios",
+      "type": "file",
+      "file": "axios@1.13.2.md",
+      "x": 1220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_build",
+      "type": "file",
+      "file": "build_1.md",
+      "x": 20,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies",
+      "type": "file",
+      "file": "dependencies.md",
+      "x": 220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_dev",
+      "type": "file",
+      "file": "dev.md",
+      "x": 420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies",
+      "type": "file",
+      "file": "devDependencies.md",
+      "x": 620,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_eslint",
+      "type": "file",
+      "file": "eslint.md",
+      "x": 820,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_eslint_config_next",
+      "type": "file",
+      "file": "eslint-config-next.md",
+      "x": 1020,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_eslint_config_next",
+      "type": "file",
+      "file": "eslint-config-next@16.0.2.md",
+      "x": 1220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_eslint_config",
+      "type": "file",
+      "file": "eslint.config.mjs.md",
+      "x": 20,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_eslint",
+      "type": "file",
+      "file": "eslint@9.md",
+      "x": 220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_eslint_config_eslintconfig",
+      "type": "file",
+      "file": "eslintConfig.md",
+      "x": 420,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_framer_motion",
+      "type": "file",
+      "file": "framer-motion@12.23.24.md",
+      "x": 620,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_lint",
+      "type": "file",
+      "file": "lint.md",
+      "x": 820,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_lucide_react",
+      "type": "file",
+      "file": "lucide-react@0.562.0.md",
+      "x": 1020,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_name",
+      "type": "file",
+      "file": "name.md",
+      "x": 1220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_next",
+      "type": "file",
+      "file": "next@16.0.2.md",
+      "x": 20,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package",
+      "type": "file",
+      "file": "package.json.md",
+      "x": 220,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_postcss",
+      "type": "file",
+      "file": "postcss.md",
+      "x": 420,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_postcss",
+      "type": "file",
+      "file": "postcss@8.5.6.md",
+      "x": 620,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_private",
+      "type": "file",
+      "file": "private.md",
+      "x": 820,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_react_dom",
+      "type": "file",
+      "file": "react-dom.md",
+      "x": 1020,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_react_dom",
+      "type": "file",
+      "file": "react-dom@19.2.0.md",
+      "x": 1220,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_react_hook_form",
+      "type": "file",
+      "file": "react-hook-form.md",
+      "x": 20,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_react_hook_form",
+      "type": "file",
+      "file": "react-hook-form@7.84.0.md",
+      "x": 220,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_react",
+      "type": "file",
+      "file": "react@19.2.0.md",
+      "x": 420,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts",
+      "type": "file",
+      "file": "scripts.md",
+      "x": 620,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_start",
+      "type": "file",
+      "file": "start.md",
+      "x": 820,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_swiper",
+      "type": "file",
+      "file": "swiper.md",
+      "x": 1020,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_swiper",
+      "type": "file",
+      "file": "swiper@12.0.3.md",
+      "x": 1220,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_tailwindcss",
+      "type": "file",
+      "file": "tailwindcss.md",
+      "x": 20,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_tailwindcss",
+      "type": "file",
+      "file": "tailwindcss@3.4.0.md",
+      "x": 220,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_version",
+      "type": "file",
+      "file": "version.md",
+      "x": 420,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g1",
+      "type": "group",
+      "label": "Galeri Pages & Error Handling",
+      "x": 1620,
+      "y": 0,
+      "width": 1320,
+      "height": 620,
+      "color": "2"
+    },
+    {
+      "id": "n_src_components_backbutton_backbutton",
+      "type": "file",
+      "file": "BackButton().md",
+      "x": 1640,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_backbutton",
+      "type": "file",
+      "file": "BackButton.js.md",
+      "x": 1840,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_publikasi_berita_slug_page_detailberitapage",
+      "type": "file",
+      "file": "DetailBeritaPage().md",
+      "x": 2040,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_galeri_id_page_detailgaleripage",
+      "type": "file",
+      "file": "DetailGaleriPage().md",
+      "x": 2240,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_publikasi_kajian_slug_page_detailkajianpage",
+      "type": "file",
+      "file": "DetailKajianPage().md",
+      "x": 2440,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_publikasi_kegiatan_slug_page_detailkegiatanpage",
+      "type": "file",
+      "file": "DetailKegiatanPage().md",
+      "x": 2640,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_error_error",
+      "type": "file",
+      "file": "Error().md",
+      "x": 1640,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_galeri_page_galeripage",
+      "type": "file",
+      "file": "GaleriPage().md",
+      "x": 1840,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_heroslider_heroslider",
+      "type": "file",
+      "file": "HeroSlider().md",
+      "x": 2040,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_heroslider",
+      "type": "file",
+      "file": "HeroSlider.js.md",
+      "x": 2240,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_home_page_homepage",
+      "type": "file",
+      "file": "HomePage().md",
+      "x": 2440,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_publikasi_page_publikasipage",
+      "type": "file",
+      "file": "PublikasiPage().md",
+      "x": 2640,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_galeri_id_page",
+      "type": "file",
+      "file": "idpage.js.md",
+      "x": 1640,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_axios",
+      "type": "file",
+      "file": "axios.md",
+      "x": 1840,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_publikasi_berita_slug_page",
+      "type": "file",
+      "file": "beritaslugpage.js.md",
+      "x": 2040,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_galeri_page_cardvariants",
+      "type": "file",
+      "file": "cardVariants.md",
+      "x": 2240,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_publikasi_page_categories",
+      "type": "file",
+      "file": "categories.md",
+      "x": 2440,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_error",
+      "type": "file",
+      "file": "error.js.md",
+      "x": 2640,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_galeri_page",
+      "type": "file",
+      "file": "galeripage.js.md",
+      "x": 1640,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_home_page",
+      "type": "file",
+      "file": "homepage.js.md",
+      "x": 1840,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_publikasi_kajian_slug_page",
+      "type": "file",
+      "file": "kajianslugpage.js.md",
+      "x": 2040,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_galeri_page_kategorifilter",
+      "type": "file",
+      "file": "kategoriFilter.md",
+      "x": 2240,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_publikasi_kegiatan_slug_page",
+      "type": "file",
+      "file": "kegiatanslugpage.js.md",
+      "x": 2440,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_lucide_react",
+      "type": "file",
+      "file": "lucide-react.md",
+      "x": 2640,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_next",
+      "type": "file",
+      "file": "next_1.md",
+      "x": 1640,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_publikasi_page",
+      "type": "file",
+      "file": "publikasipage.js.md",
+      "x": 1840,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_react",
+      "type": "file",
+      "file": "react.md",
+      "x": 2040,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "label": "PC IPM Brand Assets & Features",
+      "x": 3020,
+      "y": 0,
+      "width": 1100,
+      "height": 520,
+      "color": "3"
+    },
+    {
+      "id": "n_public_foto_kami_pengurus_group",
+      "type": "file",
+      "file": "30 Inaugurated PC IPM Mayong Officers (14 Women Seated, 16 Men Standing).md",
+      "x": 3040,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_galeri_feature",
+      "type": "file",
+      "file": "Galeri Foto & Lightbox Feature.md",
+      "x": 3240,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_homepage_feature",
+      "type": "file",
+      "file": "Homepage & Animated Splash Page Feature.md",
+      "x": 3440,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_public_logo_ipm_emblem",
+      "type": "file",
+      "file": "Ikatan Pelajar Muhammadiyah (IPM) Official Pen-Shield Emblem.md",
+      "x": 3640,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_public_foto_kami_kecamatan_mayong_venue",
+      "type": "file",
+      "file": "Kecamatan Mayong District Hall (PendopoAula) Venue.md",
+      "x": 3840,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_kontak_feature",
+      "type": "file",
+      "file": "Kontak & Info Pimpinan Feature.md",
+      "x": 3040,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_laravel_backend_api",
+      "type": "file",
+      "file": "Laravel Backend REST API (httplocalhost8000api).md",
+      "x": 3240,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_nextjs_stack",
+      "type": "file",
+      "file": "Next.js 16.0.2 & React 19.2.0 Frontend Tech Stack.md",
+      "x": 3440,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_public_next_svg_wordmark",
+      "type": "file",
+      "file": "Next.js Brand Wordmark Logo SVG.md",
+      "x": 3640,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_pc_ipm_mayong_org",
+      "type": "file",
+      "file": "PC IPM Mayong (Pimpinan Cabang Ikatan Pelajar Muhammadiyah Mayong).md",
+      "x": 3840,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_pc_ipm_mayong_frontend",
+      "type": "file",
+      "file": "PC IPM Mayong Frontend Application.md",
+      "x": 3040,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_public_foto_kami_pelantikan_raker_photo",
+      "type": "file",
+      "file": "PC IPM Mayong Pelantikan & Raker Group Portrait.md",
+      "x": 3240,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_public_foto_kami_pelantikan_banner",
+      "type": "file",
+      "file": "PELANTIKAN & RAKER Backdrop Banner with PC IPM Mayong Branding.md",
+      "x": 3440,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_publikasi_feature",
+      "type": "file",
+      "file": "Publikasi (Berita, Kajian, Kegiatan) Feature.md",
+      "x": 3640,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_public_logo_al_qalam_scripture",
+      "type": "file",
+      "file": "Surah Al-Qalam (Quran 681) Calligraphy & Open Book Symbolism.md",
+      "x": 3840,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_tentang_kami_feature",
+      "type": "file",
+      "file": "Tentang Kami (Visi, Misi, Bidang & Pengurus) Feature.md",
+      "x": 3040,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_vercel_deployment",
+      "type": "file",
+      "file": "Vercel Deployment Target.md",
+      "x": 3240,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_public_vercel_svg_mark",
+      "type": "file",
+      "file": "Vercel Triangle Brand Mark SVG.md",
+      "x": 3440,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "label": "Docker Compose & Webstack Config",
+      "x": 4200,
+      "y": 0,
+      "width": 1100,
+      "height": 520,
+      "color": "4"
+    },
+    {
+      "id": "n_docker_compose_environment_next_telemetry_disabled",
+      "type": "file",
+      "file": "NEXT_TELEMETRY_DISABLED.md",
+      "x": 4220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docker_compose_environment_node_env",
+      "type": "file",
+      "file": "NODE_ENV.md",
+      "x": 4420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docker_compose_pc_ipm_frontend_build",
+      "type": "file",
+      "file": "build.md",
+      "x": 4620,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docker_compose_pc_ipm_frontend_container_name",
+      "type": "file",
+      "file": "container_name.md",
+      "x": 4820,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docker_compose_build_context",
+      "type": "file",
+      "file": "context.md",
+      "x": 5020,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docker_compose",
+      "type": "file",
+      "file": "docker-compose.yml.md",
+      "x": 4220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docker_compose_build_dockerfile",
+      "type": "file",
+      "file": "dockerfile.md",
+      "x": 4420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docker_compose_pc_ipm_frontend_environment",
+      "type": "file",
+      "file": "environment.md",
+      "x": 4620,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docker_compose_pc_ipm_frontend_expose",
+      "type": "file",
+      "file": "expose.md",
+      "x": 4820,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docker_compose_webstack_external",
+      "type": "file",
+      "file": "external.md",
+      "x": 5020,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docker_compose_pc_ipm_frontend_image",
+      "type": "file",
+      "file": "image.md",
+      "x": 4220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docker_compose_networks",
+      "type": "file",
+      "file": "networks_1.md",
+      "x": 4420,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docker_compose_pc_ipm_frontend_networks",
+      "type": "file",
+      "file": "networks.md",
+      "x": 4620,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docker_compose_services_pc_ipm_frontend",
+      "type": "file",
+      "file": "pc-ipm-frontend.md",
+      "x": 4820,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docker_compose_pc_ipm_frontend_restart",
+      "type": "file",
+      "file": "restart.md",
+      "x": 5020,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docker_compose_services",
+      "type": "file",
+      "file": "services.md",
+      "x": 4220,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docker_compose_networks_webstack",
+      "type": "file",
+      "file": "webstack.md",
+      "x": 4420,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g4",
+      "type": "group",
+      "label": "Kontak Page, Validation & API Client",
+      "x": 5380,
+      "y": 0,
+      "width": 880,
+      "height": 520,
+      "color": "5"
+    },
+    {
+      "id": "n_ref_hookform_resolvers",
+      "type": "file",
+      "file": "@hookformresolvers.md",
+      "x": 5400,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_hookform_resolvers",
+      "type": "file",
+      "file": "@hookformresolvers@5.7.1.md",
+      "x": 5600,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_services_endpoints_api_endpoints",
+      "type": "file",
+      "file": "API_ENDPOINTS.md",
+      "x": 5800,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_kontak_page_kontakpage",
+      "type": "file",
+      "file": "KontakPage().md",
+      "x": 6000,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_kontak_page_leadercard",
+      "type": "file",
+      "file": "LeaderCard().md",
+      "x": 5400,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_services_api_api",
+      "type": "file",
+      "file": "api_1.md",
+      "x": 5600,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_services_api",
+      "type": "file",
+      "file": "api.js.md",
+      "x": 5800,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_services_api_apiservice",
+      "type": "file",
+      "file": "apiService.md",
+      "x": 6000,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_kontak_page_contactschema",
+      "type": "file",
+      "file": "contactSchema.md",
+      "x": 5400,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_services_endpoints",
+      "type": "file",
+      "file": "endpoints.js.md",
+      "x": 5600,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_kontak_page_fixurl",
+      "type": "file",
+      "file": "fixUrl().md",
+      "x": 5800,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_kontak_page_formatwalink",
+      "type": "file",
+      "file": "formatWaLink().md",
+      "x": 6000,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_kontak_page",
+      "type": "file",
+      "file": "kontakpage.js.md",
+      "x": 5400,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_zod",
+      "type": "file",
+      "file": "zod.md",
+      "x": 5600,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_zod",
+      "type": "file",
+      "file": "zod@3.25.76.md",
+      "x": 5800,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g5",
+      "type": "group",
+      "label": "Splash, Tentang & Motion Components",
+      "x": 0,
+      "y": 800,
+      "width": 880,
+      "height": 420,
+      "color": "6"
+    },
+    {
+      "id": "n_src_components_animatedcounter_animatedcounter",
+      "type": "file",
+      "file": "AnimatedCounter().md",
+      "x": 20,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_animatedcounter",
+      "type": "file",
+      "file": "AnimatedCounter.js.md",
+      "x": 220,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_bidangmodal_bidangmodal",
+      "type": "file",
+      "file": "BidangModal().md",
+      "x": 420,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_bidangmodal",
+      "type": "file",
+      "file": "BidangModal.js.md",
+      "x": 620,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_page_splashpage",
+      "type": "file",
+      "file": "SplashPage().md",
+      "x": 20,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_tentang_page_tentangpage",
+      "type": "file",
+      "file": "TentangPage().md",
+      "x": 220,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_page",
+      "type": "file",
+      "file": "apppage.js.md",
+      "x": 420,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_tentang_page_containervariants",
+      "type": "file",
+      "file": "containerVariants.md",
+      "x": 620,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_framer_motion",
+      "type": "file",
+      "file": "framer-motion.md",
+      "x": 20,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_tentang_page_itemvariants",
+      "type": "file",
+      "file": "itemVariants.md",
+      "x": 220,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_tentang_page",
+      "type": "file",
+      "file": "tentangpage.js.md",
+      "x": 420,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g6",
+      "type": "group",
+      "label": "Main Layout, Navbar, Footer & Axios",
+      "x": 1620,
+      "y": 800,
+      "width": 880,
+      "height": 420,
+      "color": "1"
+    },
+    {
+      "id": "n_src_app_main_layout",
+      "type": "file",
+      "file": "(main)layout.js.md",
+      "x": 1640,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_footer_footer",
+      "type": "file",
+      "file": "Footer().md",
+      "x": 1840,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_footer",
+      "type": "file",
+      "file": "Footer.js.md",
+      "x": 2040,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_main_layout_mainlayout",
+      "type": "file",
+      "file": "MainLayout().md",
+      "x": 2240,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_navbar_navbar",
+      "type": "file",
+      "file": "Navbar().md",
+      "x": 1640,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_navbar",
+      "type": "file",
+      "file": "Navbar.js.md",
+      "x": 1840,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_themeswitcher_themeswitcher",
+      "type": "file",
+      "file": "ThemeSwitcher().md",
+      "x": 2040,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_themeswitcher",
+      "type": "file",
+      "file": "ThemeSwitcher.js.md",
+      "x": 2240,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_lib_axios_api",
+      "type": "file",
+      "file": "api.md",
+      "x": 1640,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_lib_axios",
+      "type": "file",
+      "file": "axios.js.md",
+      "x": 1840,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_navbar_dummymenu",
+      "type": "file",
+      "file": "dummyMenu.md",
+      "x": 2040,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g7",
+      "type": "group",
+      "label": "Loading Skeletons & Page Loaders",
+      "x": 3020,
+      "y": 800,
+      "width": 880,
+      "height": 420,
+      "color": "2"
+    },
+    {
+      "id": "n_src_components_ui_loadingskeleton_cardskeleton",
+      "type": "file",
+      "file": "CardSkeleton().md",
+      "x": 3040,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_ui_loadingskeleton_galleryskeleton",
+      "type": "file",
+      "file": "GallerySkeleton().md",
+      "x": 3240,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_ui_loadingskeleton_listskeleton",
+      "type": "file",
+      "file": "ListSkeleton().md",
+      "x": 3440,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_ui_loadingskeleton_loadingskeleton",
+      "type": "file",
+      "file": "LoadingSkeleton().md",
+      "x": 3640,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_ui_loadingskeleton",
+      "type": "file",
+      "file": "LoadingSkeleton.jsx.md",
+      "x": 3040,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_ui_pageloader_pageloader",
+      "type": "file",
+      "file": "PageLoader().md",
+      "x": 3240,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_ui_pageloader",
+      "type": "file",
+      "file": "PageLoader.jsx.md",
+      "x": 3440,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_ui_pageloader_sectionloader",
+      "type": "file",
+      "file": "SectionLoader().md",
+      "x": 3640,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_ui_pageloader_spinnerloader",
+      "type": "file",
+      "file": "SpinnerLoader().md",
+      "x": 3040,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_ui_index",
+      "type": "file",
+      "file": "index.js.md",
+      "x": 3240,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g8",
+      "type": "group",
+      "label": "Root Layout, Fonts & Theme Provider",
+      "x": 4200,
+      "y": 800,
+      "width": 660,
+      "height": 420,
+      "color": "3"
+    },
+    {
+      "id": "n_src_components_themeprovider_nextthemeprovider",
+      "type": "file",
+      "file": "NextThemeProvider().md",
+      "x": 4220,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_layout_rootlayout",
+      "type": "file",
+      "file": "RootLayout().md",
+      "x": 4420,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_themeprovider",
+      "type": "file",
+      "file": "ThemeProvider.js.md",
+      "x": 4620,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_layout",
+      "type": "file",
+      "file": "applayout.js.md",
+      "x": 4220,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_layout_generatemetadata",
+      "type": "file",
+      "file": "generateMetadata().md",
+      "x": 4420,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_layout_jakarta",
+      "type": "file",
+      "file": "jakarta.md",
+      "x": 4620,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_next_themes",
+      "type": "file",
+      "file": "next-themes.md",
+      "x": 4220,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_next_themes",
+      "type": "file",
+      "file": "next-themes@0.4.6.md",
+      "x": 4420,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_globals",
+      "type": "file",
+      "file": "src_app_globals.md",
+      "x": 4620,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g9",
+      "type": "group",
+      "label": "Image URL & Thumbnail Utilities",
+      "x": 5380,
+      "y": 800,
+      "width": 660,
+      "height": 420,
+      "color": "4"
+    },
+    {
+      "id": "n_src_lib_image_extractyoutubeid",
+      "type": "file",
+      "file": "extractYouTubeId().md",
+      "x": 5400,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_lib_image_fixlegacyurl",
+      "type": "file",
+      "file": "fixLegacyUrl().md",
+      "x": 5600,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_lib_image_getimageurl",
+      "type": "file",
+      "file": "getImageUrl().md",
+      "x": 5800,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_lib_image_getimageurlwithfallback",
+      "type": "file",
+      "file": "getImageUrlWithFallback().md",
+      "x": 5400,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_lib_image_getyoutubethumbnail",
+      "type": "file",
+      "file": "getYouTubeThumbnail().md",
+      "x": 5600,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_lib_image",
+      "type": "file",
+      "file": "image.js.md",
+      "x": 5800,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_lib_image_isvalidimageurl",
+      "type": "file",
+      "file": "isValidImageUrl().md",
+      "x": 5400,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_lib_image_preloadimage",
+      "type": "file",
+      "file": "preloadImage().md",
+      "x": 5600,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_lib_image_preloadimages",
+      "type": "file",
+      "file": "preloadImages().md",
+      "x": 5800,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g10",
+      "type": "group",
+      "label": "Dynamic XML Sitemap Generator",
+      "x": 0,
+      "y": 1300,
+      "width": 660,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_src_app_sitemap_entry",
+      "type": "file",
+      "file": "entry().md",
+      "x": 20,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_sitemap_getpublisheditems",
+      "type": "file",
+      "file": "getPublishedItems().md",
+      "x": 220,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_sitemap_revalidate",
+      "type": "file",
+      "file": "revalidate.md",
+      "x": 420,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_sitemap_sitemap",
+      "type": "file",
+      "file": "sitemap().md",
+      "x": 20,
+      "y": 1460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_sitemap",
+      "type": "file",
+      "file": "sitemap.js.md",
+      "x": 220,
+      "y": 1460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_sitemap_validdate",
+      "type": "file",
+      "file": "validDate().md",
+      "x": 420,
+      "y": 1460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g11",
+      "type": "group",
+      "label": "JSConfig Path Aliases",
+      "x": 1620,
+      "y": 1300,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_jsconfig_compileroptions",
+      "type": "file",
+      "file": "compilerOptions.md",
+      "x": 1640,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_jsconfig",
+      "type": "file",
+      "file": "jsconfig.json.md",
+      "x": 1840,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_jsconfig_compileroptions_paths",
+      "type": "file",
+      "file": "paths.md",
+      "x": 1640,
+      "y": 1460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g12",
+      "type": "group",
+      "label": "Next.js Config",
+      "x": 3020,
+      "y": 1300,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_next",
+      "type": "file",
+      "file": "next.md",
+      "x": 3040,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_next_config",
+      "type": "file",
+      "file": "next.config.mjs.md",
+      "x": 3240,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_next_config_nextconfig",
+      "type": "file",
+      "file": "nextConfig.md",
+      "x": 3040,
+      "y": 1460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g13",
+      "type": "group",
+      "label": "Starter UI SVG Icons",
+      "x": 4200,
+      "y": 1300,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_public_window_svg_icon",
+      "type": "file",
+      "file": "Browser Window UI Icon (16x16 Next.js Starter Asset).md",
+      "x": 4220,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_public_file_svg_icon",
+      "type": "file",
+      "file": "Document  File UI Icon (16x16 Next.js Starter Asset).md",
+      "x": 4420,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_public_globe_svg_icon",
+      "type": "file",
+      "file": "Globe  Web UI Icon (16x16 Next.js Starter Asset).md",
+      "x": 4220,
+      "y": 1460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g14",
+      "type": "group",
+      "label": "Logo Proxy Route Handler",
+      "x": 5380,
+      "y": 1300,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_src_app_favicon_route_allowed_logo_hosts",
+      "type": "file",
+      "file": "ALLOWED_LOGO_HOSTS.md",
+      "x": 5400,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_favicon_route_get",
+      "type": "file",
+      "file": "GET().md",
+      "x": 5600,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_favicon_route",
+      "type": "file",
+      "file": "route.js.md",
+      "x": 5400,
+      "y": 1460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g15",
+      "type": "group",
+      "label": "PostCSS ESM Config",
+      "x": 0,
+      "y": 1780,
+      "width": 600,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_postcss_config_config",
+      "type": "file",
+      "file": "config.md",
+      "x": 20,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_postcss_config_mjs_postcss_config",
+      "type": "file",
+      "file": "postcss.config.mjs.md",
+      "x": 220,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g16",
+      "type": "group",
+      "label": "Global Error Boundary",
+      "x": 1620,
+      "y": 1780,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_src_app_global_error_globalerror",
+      "type": "file",
+      "file": "GlobalError().md",
+      "x": 1640,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_global_error",
+      "type": "file",
+      "file": "global-error.js.md",
+      "x": 1840,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g17",
+      "type": "group",
+      "label": "Robots Metadata Generator",
+      "x": 3020,
+      "y": 1780,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_src_app_robots_robots",
+      "type": "file",
+      "file": "robots().md",
+      "x": 3040,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_robots",
+      "type": "file",
+      "file": "robots.js.md",
+      "x": 3240,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g18",
+      "type": "group",
+      "label": "PageHeader Component",
+      "x": 4200,
+      "y": 1780,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_src_components_pageheader_pageheader",
+      "type": "file",
+      "file": "PageHeader().md",
+      "x": 4220,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_pageheader",
+      "type": "file",
+      "file": "PageHeader.js.md",
+      "x": 4420,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g19",
+      "type": "group",
+      "label": "Tailwind CSS Config",
+      "x": 5380,
+      "y": 1780,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_tailwind_config",
+      "type": "file",
+      "file": "tailwind.config.js.md",
+      "x": 5400,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tailwindcss",
+      "type": "file",
+      "file": "tailwindcss_1.md",
+      "x": 5600,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g20",
+      "type": "group",
+      "label": "PostCSS CommonJS Config",
+      "x": 0,
+      "y": 2260,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_postcss_config_js_postcss_config",
+      "type": "file",
+      "file": "postcss.config.js.md",
+      "x": 20,
+      "y": 2340,
+      "width": 180,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_docker_compose_docker_compose_networks",
+      "fromNode": "n_docker_compose",
+      "toNode": "n_docker_compose_networks",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_docker_compose_docker_compose_services",
+      "fromNode": "n_docker_compose",
+      "toNode": "n_docker_compose_services",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_docker_compose_services_docker_compose_services_pc_ipm_frontend",
+      "fromNode": "n_docker_compose_services",
+      "toNode": "n_docker_compose_services_pc_ipm_frontend",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_docker_compose_services_pc_ipm_frontend_docker_compose_pc_ipm_frontend_build",
+      "fromNode": "n_docker_compose_services_pc_ipm_frontend",
+      "toNode": "n_docker_compose_pc_ipm_frontend_build",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_docker_compose_services_pc_ipm_frontend_docker_compose_pc_ipm_frontend_container_name",
+      "fromNode": "n_docker_compose_services_pc_ipm_frontend",
+      "toNode": "n_docker_compose_pc_ipm_frontend_container_name",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_docker_compose_services_pc_ipm_frontend_docker_compose_pc_ipm_frontend_environment",
+      "fromNode": "n_docker_compose_services_pc_ipm_frontend",
+      "toNode": "n_docker_compose_pc_ipm_frontend_environment",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_docker_compose_services_pc_ipm_frontend_docker_compose_pc_ipm_frontend_expose",
+      "fromNode": "n_docker_compose_services_pc_ipm_frontend",
+      "toNode": "n_docker_compose_pc_ipm_frontend_expose",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_docker_compose_services_pc_ipm_frontend_docker_compose_pc_ipm_frontend_image",
+      "fromNode": "n_docker_compose_services_pc_ipm_frontend",
+      "toNode": "n_docker_compose_pc_ipm_frontend_image",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_docker_compose_services_pc_ipm_frontend_docker_compose_pc_ipm_frontend_networks",
+      "fromNode": "n_docker_compose_services_pc_ipm_frontend",
+      "toNode": "n_docker_compose_pc_ipm_frontend_networks",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_docker_compose_services_pc_ipm_frontend_docker_compose_pc_ipm_frontend_restart",
+      "fromNode": "n_docker_compose_services_pc_ipm_frontend",
+      "toNode": "n_docker_compose_pc_ipm_frontend_restart",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_docker_compose_pc_ipm_frontend_build_docker_compose_build_context",
+      "fromNode": "n_docker_compose_pc_ipm_frontend_build",
+      "toNode": "n_docker_compose_build_context",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_docker_compose_pc_ipm_frontend_build_docker_compose_build_dockerfile",
+      "fromNode": "n_docker_compose_pc_ipm_frontend_build",
+      "toNode": "n_docker_compose_build_dockerfile",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_docker_compose_pc_ipm_frontend_environment_docker_compose_environment_next_telemetry_disabled",
+      "fromNode": "n_docker_compose_pc_ipm_frontend_environment",
+      "toNode": "n_docker_compose_environment_next_telemetry_disabled",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_docker_compose_pc_ipm_frontend_environment_docker_compose_environment_node_env",
+      "fromNode": "n_docker_compose_pc_ipm_frontend_environment",
+      "toNode": "n_docker_compose_environment_node_env",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_docker_compose_networks_docker_compose_networks_webstack",
+      "fromNode": "n_docker_compose_networks",
+      "toNode": "n_docker_compose_networks_webstack",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_docker_compose_networks_webstack_docker_compose_webstack_external",
+      "fromNode": "n_docker_compose_networks_webstack",
+      "toNode": "n_docker_compose_webstack_external",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_eslint_config_eslint_config_eslintconfig",
+      "fromNode": "n_eslint_config",
+      "toNode": "n_eslint_config_eslintconfig",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_eslint_config_ref_eslint",
+      "fromNode": "n_eslint_config",
+      "toNode": "n_ref_eslint",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_eslint_config_ref_eslint_config_next",
+      "fromNode": "n_eslint_config",
+      "toNode": "n_ref_eslint_config_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_jsconfig_jsconfig_compileroptions",
+      "fromNode": "n_jsconfig",
+      "toNode": "n_jsconfig_compileroptions",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_jsconfig_compileroptions_jsconfig_compileroptions_paths",
+      "fromNode": "n_jsconfig_compileroptions",
+      "toNode": "n_jsconfig_compileroptions_paths",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_next_config_next",
+      "fromNode": "n_next_config",
+      "toNode": "n_next",
+      "label": "dynamic_import [EXTRACTED]"
+    },
+    {
+      "id": "e_next_config_next_config_nextconfig",
+      "fromNode": "n_next_config",
+      "toNode": "n_next_config_nextconfig",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_dependencies",
+      "fromNode": "n_package",
+      "toNode": "n_package_dependencies",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_devdependencies",
+      "fromNode": "n_package",
+      "toNode": "n_package_devdependencies",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_name",
+      "fromNode": "n_package",
+      "toNode": "n_package_name",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_private",
+      "fromNode": "n_package",
+      "toNode": "n_package_private",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_scripts",
+      "fromNode": "n_package",
+      "toNode": "n_package_scripts",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_version",
+      "fromNode": "n_package",
+      "toNode": "n_package_version",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_autoprefixer",
+      "fromNode": "n_package",
+      "toNode": "n_ref_autoprefixer",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_axios",
+      "fromNode": "n_package",
+      "toNode": "n_ref_axios",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_eslint",
+      "fromNode": "n_package",
+      "toNode": "n_ref_eslint",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_eslint_config_next",
+      "fromNode": "n_package",
+      "toNode": "n_ref_eslint_config_next",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_framer_motion",
+      "fromNode": "n_package",
+      "toNode": "n_ref_framer_motion",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_headlessui_react",
+      "fromNode": "n_package",
+      "toNode": "n_ref_headlessui_react",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_hookform_resolvers",
+      "fromNode": "n_package",
+      "toNode": "n_ref_hookform_resolvers",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_lucide_react",
+      "fromNode": "n_package",
+      "toNode": "n_ref_lucide_react",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_next",
+      "fromNode": "n_package",
+      "toNode": "n_ref_next",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_next_themes",
+      "fromNode": "n_package",
+      "toNode": "n_ref_next_themes",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_postcss",
+      "fromNode": "n_package",
+      "toNode": "n_ref_postcss",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_react",
+      "fromNode": "n_package",
+      "toNode": "n_ref_react",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_react_dom",
+      "fromNode": "n_package",
+      "toNode": "n_ref_react_dom",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_react_hook_form",
+      "fromNode": "n_package",
+      "toNode": "n_ref_react_hook_form",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_swiper",
+      "fromNode": "n_package",
+      "toNode": "n_ref_swiper",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_tailwindcss",
+      "fromNode": "n_package",
+      "toNode": "n_ref_tailwindcss",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_tailwindcss_postcss",
+      "fromNode": "n_package",
+      "toNode": "n_ref_tailwindcss_postcss",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_ref_zod",
+      "fromNode": "n_package",
+      "toNode": "n_ref_zod",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_scripts_package_scripts_build",
+      "fromNode": "n_package_scripts",
+      "toNode": "n_package_scripts_build",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_scripts_package_scripts_dev",
+      "fromNode": "n_package_scripts",
+      "toNode": "n_package_scripts_dev",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_scripts_package_scripts_lint",
+      "fromNode": "n_package_scripts",
+      "toNode": "n_package_scripts_lint",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_scripts_package_scripts_start",
+      "fromNode": "n_package_scripts",
+      "toNode": "n_package_scripts_start",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_axios",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_axios",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_framer_motion",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_framer_motion",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_headlessui_react",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_headlessui_react",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_hookform_resolvers",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_hookform_resolvers",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_lucide_react",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_lucide_react",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_next",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_next",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_next_themes",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_next_themes",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_react",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_react",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_react_dom",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_react_dom",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_react_hook_form",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_react_hook_form",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_swiper",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_swiper",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_zod",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_zod",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_headlessui_react_ref_headlessui_react",
+      "fromNode": "n_package_dependencies_headlessui_react",
+      "toNode": "n_ref_headlessui_react",
+      "label": "declares [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_bidangmodal_ref_headlessui_react",
+      "fromNode": "n_src_components_bidangmodal",
+      "toNode": "n_ref_headlessui_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_hookform_resolvers_ref_hookform_resolvers",
+      "fromNode": "n_package_dependencies_hookform_resolvers",
+      "toNode": "n_ref_hookform_resolvers",
+      "label": "declares [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_kontak_page_ref_hookform_resolvers",
+      "fromNode": "n_src_app_main_kontak_page",
+      "toNode": "n_ref_hookform_resolvers",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_axios_ref_axios",
+      "fromNode": "n_package_dependencies_axios",
+      "toNode": "n_ref_axios",
+      "label": "declares [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_galeri_id_page_ref_axios",
+      "fromNode": "n_src_app_main_galeri_id_page",
+      "toNode": "n_ref_axios",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_galeri_page_ref_axios",
+      "fromNode": "n_src_app_main_galeri_page",
+      "toNode": "n_ref_axios",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_home_page_ref_axios",
+      "fromNode": "n_src_app_main_home_page",
+      "toNode": "n_ref_axios",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_berita_slug_page_ref_axios",
+      "fromNode": "n_src_app_main_publikasi_berita_slug_page",
+      "toNode": "n_ref_axios",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_kajian_slug_page_ref_axios",
+      "fromNode": "n_src_app_main_publikasi_kajian_slug_page",
+      "toNode": "n_ref_axios",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_kegiatan_slug_page_ref_axios",
+      "fromNode": "n_src_app_main_publikasi_kegiatan_slug_page",
+      "toNode": "n_ref_axios",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_page_ref_axios",
+      "fromNode": "n_src_app_main_publikasi_page",
+      "toNode": "n_ref_axios",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_tentang_page_ref_axios",
+      "fromNode": "n_src_app_main_tentang_page",
+      "toNode": "n_ref_axios",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_heroslider_ref_axios",
+      "fromNode": "n_src_components_heroslider",
+      "toNode": "n_ref_axios",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_lib_axios_ref_axios",
+      "fromNode": "n_src_lib_axios",
+      "toNode": "n_ref_axios",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_services_api_ref_axios",
+      "fromNode": "n_src_services_api",
+      "toNode": "n_ref_axios",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_framer_motion_ref_framer_motion",
+      "fromNode": "n_package_dependencies_framer_motion",
+      "toNode": "n_ref_framer_motion",
+      "label": "declares [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_galeri_id_page_ref_framer_motion",
+      "fromNode": "n_src_app_main_galeri_id_page",
+      "toNode": "n_ref_framer_motion",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_galeri_page_ref_framer_motion",
+      "fromNode": "n_src_app_main_galeri_page",
+      "toNode": "n_ref_framer_motion",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_kontak_page_ref_framer_motion",
+      "fromNode": "n_src_app_main_kontak_page",
+      "toNode": "n_ref_framer_motion",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_page_ref_framer_motion",
+      "fromNode": "n_src_app_main_publikasi_page",
+      "toNode": "n_ref_framer_motion",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_tentang_page_ref_framer_motion",
+      "fromNode": "n_src_app_main_tentang_page",
+      "toNode": "n_ref_framer_motion",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_page_ref_framer_motion",
+      "fromNode": "n_src_app_page",
+      "toNode": "n_ref_framer_motion",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_animatedcounter_ref_framer_motion",
+      "fromNode": "n_src_components_animatedcounter",
+      "toNode": "n_ref_framer_motion",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_backbutton_ref_framer_motion",
+      "fromNode": "n_src_components_backbutton",
+      "toNode": "n_ref_framer_motion",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_bidangmodal_ref_framer_motion",
+      "fromNode": "n_src_components_bidangmodal",
+      "toNode": "n_ref_framer_motion",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_navbar_ref_framer_motion",
+      "fromNode": "n_src_components_navbar",
+      "toNode": "n_ref_framer_motion",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_lucide_react_ref_lucide_react",
+      "fromNode": "n_package_dependencies_lucide_react",
+      "toNode": "n_ref_lucide_react",
+      "label": "declares [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_galeri_id_page_ref_lucide_react",
+      "fromNode": "n_src_app_main_galeri_id_page",
+      "toNode": "n_ref_lucide_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_kontak_page_ref_lucide_react",
+      "fromNode": "n_src_app_main_kontak_page",
+      "toNode": "n_ref_lucide_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_berita_slug_page_ref_lucide_react",
+      "fromNode": "n_src_app_main_publikasi_berita_slug_page",
+      "toNode": "n_ref_lucide_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_kajian_slug_page_ref_lucide_react",
+      "fromNode": "n_src_app_main_publikasi_kajian_slug_page",
+      "toNode": "n_ref_lucide_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_kegiatan_slug_page_ref_lucide_react",
+      "fromNode": "n_src_app_main_publikasi_kegiatan_slug_page",
+      "toNode": "n_ref_lucide_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_themeswitcher_ref_lucide_react",
+      "fromNode": "n_src_components_themeswitcher",
+      "toNode": "n_ref_lucide_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_next_ref_next",
+      "fromNode": "n_package_dependencies_next",
+      "toNode": "n_ref_next",
+      "label": "declares [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_error_ref_next",
+      "fromNode": "n_src_app_error",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_layout_ref_next",
+      "fromNode": "n_src_app_layout",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_galeri_id_page_ref_next",
+      "fromNode": "n_src_app_main_galeri_id_page",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_galeri_page_ref_next",
+      "fromNode": "n_src_app_main_galeri_page",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_home_page_ref_next",
+      "fromNode": "n_src_app_main_home_page",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_kontak_page_ref_next",
+      "fromNode": "n_src_app_main_kontak_page",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_berita_slug_page_ref_next",
+      "fromNode": "n_src_app_main_publikasi_berita_slug_page",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_kajian_slug_page_ref_next",
+      "fromNode": "n_src_app_main_publikasi_kajian_slug_page",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_kegiatan_slug_page_ref_next",
+      "fromNode": "n_src_app_main_publikasi_kegiatan_slug_page",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_page_ref_next",
+      "fromNode": "n_src_app_main_publikasi_page",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_page_ref_next",
+      "fromNode": "n_src_app_page",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_backbutton_ref_next",
+      "fromNode": "n_src_components_backbutton",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_bidangmodal_ref_next",
+      "fromNode": "n_src_components_bidangmodal",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_heroslider_ref_next",
+      "fromNode": "n_src_components_heroslider",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_navbar_ref_next",
+      "fromNode": "n_src_components_navbar",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_next_themes_ref_next_themes",
+      "fromNode": "n_package_dependencies_next_themes",
+      "toNode": "n_ref_next_themes",
+      "label": "declares [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_themeprovider_ref_next_themes",
+      "fromNode": "n_src_components_themeprovider",
+      "toNode": "n_ref_next_themes",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_themeswitcher_ref_next_themes",
+      "fromNode": "n_src_components_themeswitcher",
+      "toNode": "n_ref_next_themes",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_react_ref_react",
+      "fromNode": "n_package_dependencies_react",
+      "toNode": "n_ref_react",
+      "label": "declares [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_error_ref_react",
+      "fromNode": "n_src_app_error",
+      "toNode": "n_ref_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_galeri_id_page_ref_react",
+      "fromNode": "n_src_app_main_galeri_id_page",
+      "toNode": "n_ref_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_galeri_page_ref_react",
+      "fromNode": "n_src_app_main_galeri_page",
+      "toNode": "n_ref_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_home_page_ref_react",
+      "fromNode": "n_src_app_main_home_page",
+      "toNode": "n_ref_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_kontak_page_ref_react",
+      "fromNode": "n_src_app_main_kontak_page",
+      "toNode": "n_ref_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_berita_slug_page_ref_react",
+      "fromNode": "n_src_app_main_publikasi_berita_slug_page",
+      "toNode": "n_ref_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_kajian_slug_page_ref_react",
+      "fromNode": "n_src_app_main_publikasi_kajian_slug_page",
+      "toNode": "n_ref_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_kegiatan_slug_page_ref_react",
+      "fromNode": "n_src_app_main_publikasi_kegiatan_slug_page",
+      "toNode": "n_ref_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_page_ref_react",
+      "fromNode": "n_src_app_main_publikasi_page",
+      "toNode": "n_ref_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_tentang_page_ref_react",
+      "fromNode": "n_src_app_main_tentang_page",
+      "toNode": "n_ref_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_animatedcounter_ref_react",
+      "fromNode": "n_src_components_animatedcounter",
+      "toNode": "n_ref_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_footer_ref_react",
+      "fromNode": "n_src_components_footer",
+      "toNode": "n_ref_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_heroslider_ref_react",
+      "fromNode": "n_src_components_heroslider",
+      "toNode": "n_ref_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_navbar_ref_react",
+      "fromNode": "n_src_components_navbar",
+      "toNode": "n_ref_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_themeprovider_ref_react",
+      "fromNode": "n_src_components_themeprovider",
+      "toNode": "n_ref_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_themeswitcher_ref_react",
+      "fromNode": "n_src_components_themeswitcher",
+      "toNode": "n_ref_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_react_dom_ref_react_dom",
+      "fromNode": "n_package_dependencies_react_dom",
+      "toNode": "n_ref_react_dom",
+      "label": "declares [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_react_hook_form_ref_react_hook_form",
+      "fromNode": "n_package_dependencies_react_hook_form",
+      "toNode": "n_ref_react_hook_form",
+      "label": "declares [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_kontak_page_ref_react_hook_form",
+      "fromNode": "n_src_app_main_kontak_page",
+      "toNode": "n_ref_react_hook_form",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_swiper_ref_swiper",
+      "fromNode": "n_package_dependencies_swiper",
+      "toNode": "n_ref_swiper",
+      "label": "declares [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_heroslider_ref_swiper",
+      "fromNode": "n_src_components_heroslider",
+      "toNode": "n_ref_swiper",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_zod_ref_zod",
+      "fromNode": "n_package_dependencies_zod",
+      "toNode": "n_ref_zod",
+      "label": "declares [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_kontak_page_ref_zod",
+      "fromNode": "n_src_app_main_kontak_page",
+      "toNode": "n_ref_zod",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_package_devdependencies_autoprefixer",
+      "fromNode": "n_package_devdependencies",
+      "toNode": "n_package_devdependencies_autoprefixer",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_package_devdependencies_eslint",
+      "fromNode": "n_package_devdependencies",
+      "toNode": "n_package_devdependencies_eslint",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_package_devdependencies_eslint_config_next",
+      "fromNode": "n_package_devdependencies",
+      "toNode": "n_package_devdependencies_eslint_config_next",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_package_devdependencies_postcss",
+      "fromNode": "n_package_devdependencies",
+      "toNode": "n_package_devdependencies_postcss",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_package_devdependencies_tailwindcss",
+      "fromNode": "n_package_devdependencies",
+      "toNode": "n_package_devdependencies_tailwindcss",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_package_devdependencies_tailwindcss_postcss",
+      "fromNode": "n_package_devdependencies",
+      "toNode": "n_package_devdependencies_tailwindcss_postcss",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_tailwindcss_postcss_ref_tailwindcss_postcss",
+      "fromNode": "n_package_devdependencies_tailwindcss_postcss",
+      "toNode": "n_ref_tailwindcss_postcss",
+      "label": "declares [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_autoprefixer_ref_autoprefixer",
+      "fromNode": "n_package_devdependencies_autoprefixer",
+      "toNode": "n_ref_autoprefixer",
+      "label": "declares [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_eslint_ref_eslint",
+      "fromNode": "n_package_devdependencies_eslint",
+      "toNode": "n_ref_eslint",
+      "label": "declares [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_eslint_config_next_ref_eslint_config_next",
+      "fromNode": "n_package_devdependencies_eslint_config_next",
+      "toNode": "n_ref_eslint_config_next",
+      "label": "declares [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_postcss_ref_postcss",
+      "fromNode": "n_package_devdependencies_postcss",
+      "toNode": "n_ref_postcss",
+      "label": "declares [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_tailwindcss_ref_tailwindcss",
+      "fromNode": "n_package_devdependencies_tailwindcss",
+      "toNode": "n_ref_tailwindcss",
+      "label": "declares [EXTRACTED]"
+    },
+    {
+      "id": "e_postcss_config_mjs_postcss_config_postcss_config_config",
+      "fromNode": "n_postcss_config_mjs_postcss_config",
+      "toNode": "n_postcss_config_config",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_galeri_id_page_src_app_main_galeri_id_page_detailgaleripage",
+      "fromNode": "n_src_app_main_galeri_id_page",
+      "toNode": "n_src_app_main_galeri_id_page_detailgaleripage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_galeri_id_page_src_components_backbutton",
+      "fromNode": "n_src_app_main_galeri_id_page",
+      "toNode": "n_src_components_backbutton",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_galeri_id_page_src_components_backbutton_backbutton",
+      "fromNode": "n_src_app_main_galeri_id_page",
+      "toNode": "n_src_components_backbutton_backbutton",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_galeri_id_page_detailgaleripage_src_components_backbutton_backbutton",
+      "fromNode": "n_src_app_main_galeri_id_page_detailgaleripage",
+      "toNode": "n_src_components_backbutton_backbutton",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_galeri_page_src_app_main_galeri_page_cardvariants",
+      "fromNode": "n_src_app_main_galeri_page",
+      "toNode": "n_src_app_main_galeri_page_cardvariants",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_galeri_page_src_app_main_galeri_page_galeripage",
+      "fromNode": "n_src_app_main_galeri_page",
+      "toNode": "n_src_app_main_galeri_page_galeripage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_galeri_page_src_app_main_galeri_page_kategorifilter",
+      "fromNode": "n_src_app_main_galeri_page",
+      "toNode": "n_src_app_main_galeri_page_kategorifilter",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_galeri_page_src_components_backbutton",
+      "fromNode": "n_src_app_main_galeri_page",
+      "toNode": "n_src_components_backbutton",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_galeri_page_src_components_backbutton_backbutton",
+      "fromNode": "n_src_app_main_galeri_page",
+      "toNode": "n_src_components_backbutton_backbutton",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_galeri_page_galeripage_src_components_backbutton_backbutton",
+      "fromNode": "n_src_app_main_galeri_page_galeripage",
+      "toNode": "n_src_components_backbutton_backbutton",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_home_page_src_app_main_home_page_homepage",
+      "fromNode": "n_src_app_main_home_page",
+      "toNode": "n_src_app_main_home_page_homepage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_home_page_src_components_heroslider",
+      "fromNode": "n_src_app_main_home_page",
+      "toNode": "n_src_components_heroslider",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_home_page_src_components_heroslider_heroslider",
+      "fromNode": "n_src_app_main_home_page",
+      "toNode": "n_src_components_heroslider_heroslider",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_home_page_homepage_src_components_heroslider_heroslider",
+      "fromNode": "n_src_app_main_home_page_homepage",
+      "toNode": "n_src_components_heroslider_heroslider",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_kontak_page_src_app_main_kontak_page_contactschema",
+      "fromNode": "n_src_app_main_kontak_page",
+      "toNode": "n_src_app_main_kontak_page_contactschema",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_kontak_page_src_app_main_kontak_page_fixurl",
+      "fromNode": "n_src_app_main_kontak_page",
+      "toNode": "n_src_app_main_kontak_page_fixurl",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_kontak_page_src_app_main_kontak_page_formatwalink",
+      "fromNode": "n_src_app_main_kontak_page",
+      "toNode": "n_src_app_main_kontak_page_formatwalink",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_kontak_page_src_app_main_kontak_page_kontakpage",
+      "fromNode": "n_src_app_main_kontak_page",
+      "toNode": "n_src_app_main_kontak_page_kontakpage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_kontak_page_src_app_main_kontak_page_leadercard",
+      "fromNode": "n_src_app_main_kontak_page",
+      "toNode": "n_src_app_main_kontak_page_leadercard",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_kontak_page_src_components_backbutton",
+      "fromNode": "n_src_app_main_kontak_page",
+      "toNode": "n_src_components_backbutton",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_kontak_page_src_components_backbutton_backbutton",
+      "fromNode": "n_src_app_main_kontak_page",
+      "toNode": "n_src_components_backbutton_backbutton",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_kontak_page_src_services_api",
+      "fromNode": "n_src_app_main_kontak_page",
+      "toNode": "n_src_services_api",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_kontak_page_src_services_api_apiservice",
+      "fromNode": "n_src_app_main_kontak_page",
+      "toNode": "n_src_services_api_apiservice",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_kontak_page_leadercard_src_app_main_kontak_page_fixurl",
+      "fromNode": "n_src_app_main_kontak_page_leadercard",
+      "toNode": "n_src_app_main_kontak_page_fixurl",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_kontak_page_kontakpage_src_app_main_kontak_page_formatwalink",
+      "fromNode": "n_src_app_main_kontak_page_kontakpage",
+      "toNode": "n_src_app_main_kontak_page_formatwalink",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_kontak_page_leadercard_src_app_main_kontak_page_formatwalink",
+      "fromNode": "n_src_app_main_kontak_page_leadercard",
+      "toNode": "n_src_app_main_kontak_page_formatwalink",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_kontak_page_kontakpage_src_app_main_kontak_page_leadercard",
+      "fromNode": "n_src_app_main_kontak_page_kontakpage",
+      "toNode": "n_src_app_main_kontak_page_leadercard",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_kontak_page_kontakpage_src_components_backbutton_backbutton",
+      "fromNode": "n_src_app_main_kontak_page_kontakpage",
+      "toNode": "n_src_components_backbutton_backbutton",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_layout_src_app_main_layout_mainlayout",
+      "fromNode": "n_src_app_main_layout",
+      "toNode": "n_src_app_main_layout_mainlayout",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_layout_src_components_footer",
+      "fromNode": "n_src_app_main_layout",
+      "toNode": "n_src_components_footer",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_layout_src_components_footer_footer",
+      "fromNode": "n_src_app_main_layout",
+      "toNode": "n_src_components_footer_footer",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_layout_src_components_navbar",
+      "fromNode": "n_src_app_main_layout",
+      "toNode": "n_src_components_navbar",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_layout_src_components_navbar_navbar",
+      "fromNode": "n_src_app_main_layout",
+      "toNode": "n_src_components_navbar_navbar",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_layout_mainlayout_src_components_footer_footer",
+      "fromNode": "n_src_app_main_layout_mainlayout",
+      "toNode": "n_src_components_footer_footer",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_layout_mainlayout_src_components_navbar_navbar",
+      "fromNode": "n_src_app_main_layout_mainlayout",
+      "toNode": "n_src_components_navbar_navbar",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_berita_slug_page_src_app_main_publikasi_berita_slug_page_detailberitapage",
+      "fromNode": "n_src_app_main_publikasi_berita_slug_page",
+      "toNode": "n_src_app_main_publikasi_berita_slug_page_detailberitapage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_berita_slug_page_src_components_backbutton",
+      "fromNode": "n_src_app_main_publikasi_berita_slug_page",
+      "toNode": "n_src_components_backbutton",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_berita_slug_page_src_components_backbutton_backbutton",
+      "fromNode": "n_src_app_main_publikasi_berita_slug_page",
+      "toNode": "n_src_components_backbutton_backbutton",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_berita_slug_page_detailberitapage_src_components_backbutton_backbutton",
+      "fromNode": "n_src_app_main_publikasi_berita_slug_page_detailberitapage",
+      "toNode": "n_src_components_backbutton_backbutton",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_kajian_slug_page_src_app_main_publikasi_kajian_slug_page_detailkajianpage",
+      "fromNode": "n_src_app_main_publikasi_kajian_slug_page",
+      "toNode": "n_src_app_main_publikasi_kajian_slug_page_detailkajianpage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_kajian_slug_page_src_components_backbutton",
+      "fromNode": "n_src_app_main_publikasi_kajian_slug_page",
+      "toNode": "n_src_components_backbutton",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_kajian_slug_page_src_components_backbutton_backbutton",
+      "fromNode": "n_src_app_main_publikasi_kajian_slug_page",
+      "toNode": "n_src_components_backbutton_backbutton",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_kajian_slug_page_detailkajianpage_src_components_backbutton_backbutton",
+      "fromNode": "n_src_app_main_publikasi_kajian_slug_page_detailkajianpage",
+      "toNode": "n_src_components_backbutton_backbutton",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_kegiatan_slug_page_src_app_main_publikasi_kegiatan_slug_page_detailkegiatanpage",
+      "fromNode": "n_src_app_main_publikasi_kegiatan_slug_page",
+      "toNode": "n_src_app_main_publikasi_kegiatan_slug_page_detailkegiatanpage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_kegiatan_slug_page_src_components_backbutton",
+      "fromNode": "n_src_app_main_publikasi_kegiatan_slug_page",
+      "toNode": "n_src_components_backbutton",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_kegiatan_slug_page_src_components_backbutton_backbutton",
+      "fromNode": "n_src_app_main_publikasi_kegiatan_slug_page",
+      "toNode": "n_src_components_backbutton_backbutton",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_main_publikasi_kegiatan_slug_page_detailkegiatanpage_src_components_backbutton_backbutton",
+      "fromNode": "n_src_app_main_publikasi_kegiatan_slug_page_detailkegiatanpage",
+      "toNode": "n_src_components_backbutton_backbutton",
+      "label": "calls [EXTRACTED]"
+    }
+  ]
+}
