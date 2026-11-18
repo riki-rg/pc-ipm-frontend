@@ -75,12 +75,12 @@ export default function GaleriPage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="container mx-auto px-6 text-center">
+        <div className="container mx-auto px-4 text-left sm:px-6">
           <h1 className="text-3xl font-extrabold text-white sm:text-4xl md:text-5xl">
             Galeri kegiatan
           </h1>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-200 md:text-lg">
-            Lihat dokumentasi kegiatan dan kajian PC IPM Mayong dalam kumpulan album foto.
+          <p className="mt-4 text-base leading-relaxed text-gray-200 md:text-lg">
+            Dokumentasi kegiatan dan kajian PC IPM Mayong.
           </p>
         </div>
       </motion.section>
