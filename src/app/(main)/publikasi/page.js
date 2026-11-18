@@ -41,7 +41,7 @@ export default function PublikasiPage() {
         // Samakan format data agar bisa ditampilkan dalam satu daftar.
         const berita = (resBerita.data.data || []).map(item => ({
           ...item, type: 'berita', label: 'Berita', color: 'bg-ipm-yellow/20 text-ipm-yellow-dark',
-          dateSort: new Date(item.created_at), desc: stripHtml(item.isi_konten)
+          dateSort: new Date(item.tanggal_publish || item.created_at), desc: stripHtml(item.isi_konten)
         }));
         const kajian = (resKajian.data.data || []).map(item => ({
           ...item, type: 'kajian', label: 'Kajian', color: 'bg-ipm-green/15 text-ipm-green-deep',

@@ -40,7 +40,11 @@ export default function HomePage() {
         }));
 
         const gabungan = [...dataBerita, ...dataKajian, ...dataKegiatan];
-        const sorted = gabungan.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+        const sorted = gabungan.sort((a, b) => {
+          const dateA = a.tanggal_publish || a.waktu || a.created_at;
+          const dateB = b.tanggal_publish || b.waktu || b.created_at;
+          return new Date(dateB) - new Date(dateA);
+        });
         setSorotan(sorted.slice(0, 4));
       } catch (error) {
         console.error('Gagal ambil data sorotan gabungan:', error);
