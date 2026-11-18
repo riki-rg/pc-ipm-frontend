@@ -54,7 +54,19 @@ export default function HomePage() {
 
   const stripHtml = (html) => {
     if (!html) return '';
-    return html.replace(/<\/?[^>]+(>|$)/g, '').substring(0, 120) + '...';
+    const plainText = html
+      .replace(/<[^>]*>/g, ' ')
+      .replace(/&nbsp;|&#160;|&#xA0;/gi, ' ')
+      .replace(/&amp;/gi, '&')
+      .replace(/&lt;/gi, '<')
+      .replace(/&gt;/gi, '>')
+      .replace(/&quot;/gi, '"')
+      .replace(/&#39;|&apos;/gi, "'")
+      .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)))
+      .replace(/&#x([\da-f]+);/gi, (_, code) => String.fromCodePoint(parseInt(code, 16)))
+      .replace(/\s+/g, ' ')
+      .trim();
+    return plainText.length > 120 ? `${plainText.slice(0, 120).trimEnd()}…` : plainText;
   };
 
   const gambarSrc = (item) =>
