@@ -22,7 +22,7 @@ export default function GaleriPage() {
   const [filterAktif, setFilterAktif] = useState('Semua');
   const [currentPage, setCurrentPage] = useState(1);
 
-  // --- 1. FETCH API ---
+  // Ambil daftar album dari API.
   useEffect(() => {
     const fetchAlbums = async () => {
       try {
@@ -38,14 +38,14 @@ export default function GaleriPage() {
     fetchAlbums();
   }, []);
 
-  // --- 2. FILTER LOGIC ---
+  // Saring album berdasarkan kategori yang dipilih.
   const filteredAlbums = albums.filter(item => {
     if (filterAktif === 'Semua') return true;
-    // Pastikan case huruf sama (Database lo mungkin 'Kegiatan', filter juga 'Kegiatan')
+    // Samakan kategori album dengan filter yang aktif.
     return item.kategori === filterAktif;
   });
 
-  // --- 3. PAGINATION LOGIC ---
+  // Tampilkan album secara bertahap.
   const totalPages = Math.ceil(filteredAlbums.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
@@ -64,7 +64,7 @@ export default function GaleriPage() {
 
   return (
     <div className="w-full bg-ipm-paper dark:bg-gray-900">
-      <div className="container mx-auto px-6 pt-6 pb-5">
+      <div className="container mx-auto px-4 pb-5 pt-6 sm:px-6">
         <BackButton />
       </div>
       
@@ -76,27 +76,27 @@ export default function GaleriPage() {
         transition={{ duration: 0.5 }}
       >
         <div className="container mx-auto px-6 text-center">
-          <h1 className="text-3xl font-extrabold md:text-5xl text-white">
-            Galeri Jejak Langkah
+          <h1 className="text-3xl font-extrabold text-white sm:text-4xl md:text-5xl">
+            Galeri kegiatan
           </h1>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-200 md:text-lg">
-            Visual adalah cerita. Lihat rangkuman momen dan keseruan kami dalam bentuk album foto & video.
+            Lihat dokumentasi kegiatan dan kajian PC IPM Mayong dalam kumpulan album foto.
           </p>
         </div>
       </motion.section>
 
       {/* FILTER BUTTON */}
-      <section className="w-full py-8 sticky top-[64px] z-40 bg-white/90 backdrop-blur border-b border-gray-200 dark:bg-gray-900/90 dark:border-gray-800">
-        <div className="container mx-auto px-6">
+      <section className="sticky top-[64px] z-40 w-full border-b border-gray-200 bg-ipm-paper/90 py-3 backdrop-blur dark:border-gray-800 dark:bg-gray-900/90 sm:py-4">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="flex flex-wrap items-center justify-center gap-4">
             {kategoriFilter.map((kategori) => (
               <button
                 key={kategori}
                 onClick={() => setFilterAktif(kategori)}
-                className={`rounded-full px-6 py-2.5 text-sm font-semibold transition-all duration-300 ${
+                className={`min-h-11 rounded-full px-4 py-2.5 text-sm font-semibold transition-colors duration-300 sm:px-6 ${
                   filterAktif === kategori 
                     ? 'bg-ipm-gradient text-gray-900 shadow-lg'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700'
                 }`}
               >
                 {kategori}
@@ -107,13 +107,13 @@ export default function GaleriPage() {
       </section>
       
       {/* GRID ALBUM */}
-      <section className="w-full bg-gray-50 py-24 min-h-[60vh] dark:bg-gray-800">
-        <div className="container mx-auto px-6">
+      <section className="min-h-[60vh] w-full bg-gray-50 py-16 dark:bg-gray-800 sm:py-24">
+        <div className="container mx-auto px-4 sm:px-6">
           
           {loading ? (
              // SKELETON LOADING
              <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-               {[1,2,3].map(n => <div key={n} className="h-64 bg-gray-200 rounded-xl animate-pulse"/>)}
+               {[1,2,3].map(n => <div key={n} className="h-64 rounded-xl bg-gray-200 animate-pulse dark:bg-gray-700"/>)}
              </div>
           ) : (
             <motion.div layout className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -133,7 +133,7 @@ export default function GaleriPage() {
                       href={`/galeri/${album.id}`}
                       className="group block transform overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl dark:bg-gray-700"
                     >
-                      <div className="relative aspect-video w-full bg-gray-200">
+                      <div className="relative aspect-video w-full bg-gray-200 dark:bg-gray-600">
                         {/* GAMBAR DARI API */}
                         <Image
                             src={album.cover_url ? album.cover_url.replace('/uploads/', '/storage/') : '/logo.png'}
@@ -145,7 +145,7 @@ export default function GaleriPage() {
                         
                         {/* Overlay */}
                         <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6 pt-12">
-                          <span className="mb-2 inline-block rounded-md bg-yellow-400/90 px-2 py-0.5 text-xs font-bold text-black">
+                          <span className="mb-2 inline-block rounded-md bg-yellow-300 px-2 py-0.5 text-xs font-bold text-gray-950 shadow-sm">
                             {album.kategori}
                           </span>
                           <h3 className="text-xl font-bold text-white line-clamp-1">
@@ -153,7 +153,7 @@ export default function GaleriPage() {
                           </h3>
                           <span className="text-sm text-gray-300">
                              {/* foto_galeri_count diambil dari withCount di Controller */}
-                            {album.foto_galeri_count || 0} Foto
+                            {album.foto_galeri_count || 0} foto
                           </span>
                         </div>
                       </div>
@@ -168,7 +168,7 @@ export default function GaleriPage() {
           {!loading && currentAlbums.length === 0 && (
             <div className="text-center py-12">
               <p className="text-xl text-gray-500 dark:text-gray-400">
-                Oops! Belum ada album di kategori &quot;{filterAktif}&quot;.
+                Belum ada album dalam kategori “{filterAktif}”.
               </p>
             </div>
           )}
@@ -177,10 +177,10 @@ export default function GaleriPage() {
       </section>
 
       {/* PAGINATION */}
-      <section className="w-full bg-gray-50 pb-24 dark:bg-gray-800">
-        <div className="container mx-auto px-6 flex justify-center">
+      <section className="w-full bg-gray-50 pb-16 dark:bg-gray-800 sm:pb-24">
+        <div className="container mx-auto flex justify-center px-4 sm:px-6">
           {totalPages > 1 && (
-            <div className="flex items-center space-x-2 rounded-lg bg-white p-2 shadow-md dark:bg-gray-700">
+            <div className="flex max-w-full items-center gap-1 overflow-x-auto rounded-lg bg-white p-2 shadow-md dark:bg-gray-700 sm:gap-2">
               <button
                 onClick={() => handlePageChange(currentPage - 1)}
                 disabled={currentPage === 1}

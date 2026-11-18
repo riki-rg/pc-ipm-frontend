@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect, useState, use } from 'react'; // Pakai 'use' buat params
+import { useEffect, useState, use } from 'react';
 import Image from 'next/image';
 import axios from 'axios';
 import BackButton from '@/components/BackButton';
-import { Calendar, MapPin, Clock, Users } from 'lucide-react'; // Icon lengkap
+import { Calendar, MapPin, Clock, Users } from 'lucide-react';
 
 export default function DetailKegiatanPage({ params }) {
   const resolvedParams = use(params);
@@ -17,7 +17,7 @@ export default function DetailKegiatanPage({ params }) {
     const fetchData = async () => {
       try {
         setLoading(true);
-        // Tembak API Kegiatan
+        // Ambil detail kegiatan dari API.
         const response = await axios.get(`/api/kegiatan/${slug}`);
         setData(response.data.data);
       } catch (error) {
@@ -30,17 +30,16 @@ export default function DetailKegiatanPage({ params }) {
     if (slug) fetchData();
   }, [slug]);
 
-  if (loading) return <div className="min-h-screen flex items-center justify-center">Loading...</div>;
-  if (!data) return <div className="min-h-screen flex items-center justify-center">Kegiatan tidak ditemukan :(</div>;
+  if (loading) return <div className="flex min-h-screen items-center justify-center bg-ipm-paper text-gray-700 dark:bg-gray-900 dark:text-gray-200">Memuat kegiatan…</div>;
+  if (!data) return <div className="flex min-h-screen items-center justify-center bg-ipm-paper px-4 text-center text-gray-700 dark:bg-gray-900 dark:text-gray-200">Kegiatan tidak ditemukan.</div>;
 
   return (
     <div className="min-h-screen bg-ipm-paper pb-20 dark:bg-gray-900">
-      <div className="container mx-auto px-6 pt-6 pb-5">
+      <div className="container mx-auto px-4 pb-5 pt-6 sm:px-6">
         <BackButton />
       </div>
       
-      {/* 1. HEADER GAMBAR */}
-      <div className="relative w-full h-[400px] md:h-[500px]">
+      <div className="relative h-[360px] w-full sm:h-[420px] md:h-[500px]">
         {data.gambar_header_url ? (
           <Image
             src={data.gambar_header_url.replace('/uploads/', '/storage/')}
@@ -51,27 +50,26 @@ export default function DetailKegiatanPage({ params }) {
             unoptimized
           />
         ) : (
-          <div className="w-full h-full bg-blue-900 flex items-center justify-center text-white">No Poster Available</div>
+          <div className="flex h-full w-full items-center justify-center bg-ipm-green-deep px-4 text-center text-white">Poster kegiatan belum tersedia.</div>
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent" />
         
-        <div className="absolute bottom-0 left-0 w-full p-6 md:p-12 container mx-auto">
-          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold mb-4 inline-block">
+        <div className="container absolute bottom-0 left-0 mx-auto w-full px-4 pb-8 sm:px-6 sm:pb-10 md:pb-12">
+          <span className="mb-4 inline-block rounded-full bg-ipm-yellow px-3 py-1 text-sm font-bold text-ipm-green-deep">
             Kegiatan
           </span>
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
+          <h1 className="mb-4 text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl">
             {data.judul}
           </h1>
           
-          {/* Info Baris 1: Waktu & Lokasi */}
-          <div className="flex flex-wrap gap-6 text-gray-200 text-sm md:text-base">
+          <div className="flex flex-wrap gap-4 text-sm text-gray-200 sm:gap-6 md:text-base">
             <div className="flex items-center gap-2">
-              <Calendar size={18} className="text-blue-400" />
+              <Calendar aria-hidden="true" size={18} className="text-ipm-yellow" />
               {data.tanggal_formatted}
             </div>
             {data.lokasi && (
               <div className="flex items-center gap-2">
-                <MapPin size={18} className="text-red-400" />
+                <MapPin aria-hidden="true" size={18} className="text-ipm-yellow" />
                 {data.lokasi}
               </div>
             )}

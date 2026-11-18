@@ -36,14 +36,14 @@ function LeaderCard({ person, role, fallback }) {
           )}
         </div>
         <div className="min-w-0">
-          <p className="text-xs font-bold text-ipm-green-soft">{person.jabatan || role}</p>
+          <p className="text-xs font-bold text-ipm-green-soft dark:text-ipm-yellow">{person.jabatan || role}</p>
           <h3 className="truncate text-lg font-extrabold text-ipm-ink dark:text-white">{person.nama_lengkap}</h3>
         </div>
       </div>
       <p className="mt-4 text-sm leading-relaxed text-gray-600 dark:text-gray-300">“{person.kutipan || 'Bergerak dan bertumbuh bersama pelajar.'}”</p>
       <div className="mt-4 flex flex-wrap gap-2">
-        {person.email && <a href={`mailto:${person.email}`} className="rounded-full bg-ipm-paper px-3 py-1.5 text-xs font-semibold text-ipm-green-deep hover:bg-ipm-yellow">Email</a>}
-        {person.whatsapp && <a href={formatWaLink(person.whatsapp)} target="_blank" rel="noopener noreferrer" className="rounded-full bg-ipm-green-deep px-3 py-1.5 text-xs font-semibold text-white hover:bg-ipm-green-soft">WhatsApp</a>}
+        {person.email && <a href={`mailto:${person.email}`} className="min-h-11 rounded-full bg-ipm-paper px-3 py-1.5 text-xs font-semibold text-ipm-green-deep hover:bg-ipm-yellow dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600">Email</a>}
+        {person.whatsapp && <a href={formatWaLink(person.whatsapp)} target="_blank" rel="noopener noreferrer" className="min-h-11 rounded-full bg-ipm-green-deep px-3 py-1.5 text-xs font-semibold text-white hover:bg-ipm-green-soft">WhatsApp</a>}
       </div>
     </article>
   );
@@ -81,27 +81,27 @@ export default function KontakPage() {
 
   return (
     <div className="min-h-screen bg-ipm-paper dark:bg-gray-900">
-      <div className="container mx-auto px-6 pt-6"><BackButton /></div>
+      <div className="container mx-auto px-4 pt-6 sm:px-6"><BackButton /></div>
 
       <header
-        className="hero-texture mt-5 py-20 text-white md:py-24"
+        className="hero-texture mt-5 bg-ipm-green-gradient py-16 text-white md:py-24"
         style={{ background: 'linear-gradient(135deg, #0B3D2E 0%, #14532D 100%)' }}
       >
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4 sm:px-6">
           <p className="mb-2 text-sm font-semibold text-ipm-yellow">Kontak PC IPM Mayong</p>
-          <h1 className="max-w-2xl text-3xl font-extrabold md:text-5xl">Mari mulai percakapan yang baik.</h1>
+          <h1 className="max-w-2xl text-3xl font-extrabold sm:text-4xl md:text-5xl">Mari mulai percakapan yang baik.</h1>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-200 md:text-lg">
             {setting?.deskripsi_singkat || 'Punya pertanyaan, usulan, atau ingin berkolaborasi? Kirim pesan kepada kami.'}
           </p>
         </div>
       </header>
 
-      <main className="container mx-auto grid gap-12 px-6 py-16 lg:grid-cols-[1.1fr_.9fr]">
+      <main className="container mx-auto grid gap-8 px-4 py-12 sm:px-6 sm:py-16 lg:grid-cols-[1.1fr_.9fr] lg:gap-12">
         <section>
           <div className="accent-rule mb-4 w-16" />
           <h2 className="text-3xl font-extrabold text-ipm-ink dark:text-white">Kirim pesan</h2>
           <p className="mt-2 max-w-lg text-gray-600 dark:text-gray-300">Pesanmu diteruskan langsung ke pengurus melalui panel admin.</p>
-          <form onSubmit={handleSubmit(onSubmit)} className="mt-8 rounded-2xl bg-white p-6 shadow-sm ring-1 ring-gray-200 dark:bg-gray-800 dark:ring-gray-700 md:p-8">
+          <form onSubmit={handleSubmit(onSubmit)} className="mt-8 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-gray-200 dark:bg-gray-800 dark:ring-gray-700 sm:p-6 md:p-8">
             <div className="space-y-5">
               <div><label className="mb-2 block text-sm font-bold text-ipm-ink dark:text-white">Nama</label><input {...register('nama')} placeholder="Nama Anda" className="w-full rounded-xl border border-gray-300 bg-white p-3 text-sm outline-none focus:border-ipm-green-deep focus:ring-2 focus:ring-ipm-yellow/40 dark:bg-gray-900" />{errors.nama && <p className="mt-1 text-xs text-red-600">{errors.nama.message}</p>}</div>
               <div><label className="mb-2 block text-sm font-bold text-ipm-ink dark:text-white">Email</label><input {...register('email')} type="email" placeholder="nama@email.com" className="w-full rounded-xl border border-gray-300 bg-white p-3 text-sm outline-none focus:border-ipm-green-deep focus:ring-2 focus:ring-ipm-yellow/40 dark:bg-gray-900" />{errors.email && <p className="mt-1 text-xs text-red-600">{errors.email.message}</p>}</div>
@@ -118,11 +118,11 @@ export default function KontakPage() {
             <p className="text-sm font-semibold text-ipm-yellow">Informasi langsung</p>
             <h2 className="mt-2 text-2xl font-extrabold">Datang atau hubungi kami</h2>
             <div className="mt-6 space-y-4 text-sm text-gray-200">
-              <p className="flex gap-3"><MapPin className="h-5 w-5 shrink-0 text-ipm-yellow" />{setting?.alamat || 'Alamat sekretariat belum diatur'}</p>
-              <a href={`mailto:${setting?.email || ''}`} className="flex gap-3 hover:text-ipm-yellow"><Mail className="h-5 w-5 shrink-0 text-ipm-yellow" />{setting?.email || 'Email belum diatur'}</a>
-              {setting?.whatsapp && <a href={formatWaLink(setting.whatsapp)} target="_blank" rel="noopener noreferrer" className="flex gap-3 hover:text-ipm-yellow"><MessageCircle className="h-5 w-5 shrink-0 text-ipm-yellow" />{setting.whatsapp}</a>}
+              <p className="flex min-w-0 items-start gap-3 break-words"><MapPin aria-hidden="true" className="mt-0.5 h-5 w-5 shrink-0 text-ipm-yellow" /><span>{setting?.alamat || 'Alamat sekretariat belum diatur'}</span></p>
+              <a href={`mailto:${setting?.email || ''}`} className="flex min-w-0 items-start gap-3 break-all hover:text-ipm-yellow"><Mail aria-hidden="true" className="mt-0.5 h-5 w-5 shrink-0 text-ipm-yellow" /><span>{setting?.email || 'Email belum diatur'}</span></a>
+              {setting?.whatsapp && <a href={formatWaLink(setting.whatsapp)} target="_blank" rel="noopener noreferrer" className="flex min-w-0 items-start gap-3 break-all hover:text-ipm-yellow"><MessageCircle aria-hidden="true" className="mt-0.5 h-5 w-5 shrink-0 text-ipm-yellow" /><span>{setting.whatsapp}</span></a>}
             </div>
-            <div className="mt-7 flex gap-3 border-t border-white/15 pt-5">
+            <div className="mt-7 flex flex-wrap gap-3 border-t border-white/15 pt-5">
               {setting?.instagram && <a href={setting.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="rounded-full bg-white/10 p-2.5 hover:bg-ipm-yellow hover:text-ipm-green-deep"><Instagram size={20} /></a>}
               {setting?.youtube && <a href={setting.youtube} target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="rounded-full bg-white/10 p-2.5 hover:bg-ipm-yellow hover:text-ipm-green-deep"><Youtube size={20} /></a>}
             </div>
@@ -132,8 +132,8 @@ export default function KontakPage() {
       </main>
 
       <section className="border-t border-gray-200 bg-white py-16 dark:border-gray-800 dark:bg-gray-900">
-        <div className="container mx-auto px-6"><div className="accent-rule mb-4 w-16" /><h2 className="text-3xl font-extrabold text-ipm-ink dark:text-white">Pimpinan yang dapat dihubungi</h2><p className="mt-2 text-gray-600 dark:text-gray-300">Untuk kebutuhan koordinasi langsung.</p>
-          {loading ? <div className="mt-8 grid gap-5 md:grid-cols-2"><div className="h-48 animate-pulse rounded-2xl bg-gray-200" /><div className="h-48 animate-pulse rounded-2xl bg-gray-200" /></div> : <div className="mt-8 grid gap-5 md:grid-cols-2"><LeaderCard person={pimpinan.ketum} role="Ketua Umum" fallback="K" /><LeaderCard person={pimpinan.sekum} role="Sekretaris Umum" fallback="S" /></div>}
+        <div className="container mx-auto px-4 sm:px-6"><div className="accent-rule mb-4 w-16" /><h2 className="text-3xl font-extrabold text-ipm-ink dark:text-white">Pimpinan yang dapat dihubungi</h2><p className="mt-2 text-gray-600 dark:text-gray-300">Untuk kebutuhan koordinasi langsung.</p>
+          {loading ? <div className="mt-8 grid gap-5 md:grid-cols-2"><div className="h-48 animate-pulse rounded-2xl bg-gray-200 dark:bg-gray-700" /><div className="h-48 animate-pulse rounded-2xl bg-gray-200 dark:bg-gray-700" /></div> : <div className="mt-8 grid gap-5 md:grid-cols-2"><LeaderCard person={pimpinan.ketum} role="Ketua Umum" fallback="K" /><LeaderCard person={pimpinan.sekum} role="Sekretaris Umum" fallback="S" /></div>}
         </div>
       </section>
     </div>

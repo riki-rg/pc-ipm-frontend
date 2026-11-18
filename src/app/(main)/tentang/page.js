@@ -39,7 +39,7 @@ export default function TentangPage() {
 
   return (
     <div className="w-full bg-ipm-paper dark:bg-gray-900">
-      <div className="container mx-auto px-6 pt-6 pb-5">
+      <div className="container mx-auto px-4 pb-5 pt-6 sm:px-6">
         <BackButton />
       </div>
       
@@ -153,8 +153,8 @@ export default function TentangPage() {
       </section>
       
       {/* ===== 4. SECTION BIDANG KAMI (DINAMIS) ===== */}
-      <section className="w-full bg-gray-50 py-24 dark:bg-gray-800">
-        <div className="container mx-auto px-6"> {/* Hapus motion.div di sini biar gak ganggu */}
+      <section className="w-full bg-gray-50 py-16 dark:bg-gray-800 sm:py-24">
+        <div className="container mx-auto px-4 sm:px-6"> {/* Hapus motion.div di sini biar gak ganggu */}
           
           {/* Judul & Deskripsi (Animasi Standar) */}
           <motion.div 
@@ -174,13 +174,13 @@ export default function TentangPage() {
           {/* GRID KARTU (LOGIC BARU) */}
           {loading ? (
              // Skeleton Loading
-             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-                {[1,2,3].map(i => <div key={i} className="h-64 bg-gray-200 rounded-xl animate-pulse"/>)}
+             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+                {[1,2,3].map(i => <div key={i} className="h-64 rounded-xl bg-gray-200 animate-pulse dark:bg-gray-700"/>)}
              </div>
           ) : (
             // Pake motion.div DI SINI, biar animasi baru mulai PAS data udah ada
             <motion.div 
-              className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+              className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8"
               variants={containerVariants}
               initial="hidden"
               whileInView="visible" // Pemicu animasi saat scroll

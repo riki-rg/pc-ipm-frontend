@@ -15,7 +15,7 @@ export default function BackButton({ label = 'Kembali' }) {
       type="button"
       onClick={() => router.back()}
       whileTap={{ scale: 0.97 }}
-      className="inline-flex items-center gap-2 rounded-full border-2 border-ipm-green-deep/30 px-4 py-2 text-sm font-semibold text-ipm-green-deep transition-colors hover:border-ipm-green-deep hover:bg-ipm-green-deep hover:text-white"
+      className="inline-flex min-h-11 items-center gap-2 rounded-full border-2 border-ipm-green-deep/30 px-4 py-2 text-sm font-semibold text-ipm-green-deep transition-colors hover:border-ipm-green-deep hover:bg-ipm-green-deep hover:text-white dark:border-ipm-yellow/50 dark:text-ipm-yellow dark:hover:border-ipm-yellow dark:hover:bg-ipm-yellow dark:hover:text-ipm-green-deep"
       aria-label={`Kembali ke halaman sebelumnya`}
     >
       <svg

@@ -64,7 +64,7 @@ export default function HomePage() {
   const sisanya = sorotan.slice(1, 4);
 
   return (
-    <div className="w-full">
+    <div className="w-full bg-ipm-paper dark:bg-gray-900">
       {/* ===== HERO: panel hijau tua dengan tekstur, konten asimetris ===== */}
       <section className="relative overflow-hidden bg-ipm-green-gradient text-white">
         <div className="hero-texture absolute inset-0 opacity-60" aria-hidden="true" />
@@ -105,19 +105,19 @@ export default function HomePage() {
       </section>
 
       {/* ===== SOROTAN: 1 featured besar + 3 kecil ===== */}
-      <section className="w-full py-20">
+      <section className="w-full py-16 sm:py-20">
         <div className="container mx-auto px-6">
-          <div className="mb-10 flex items-end justify-between">
+          <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
             <div>
               <div className="accent-rule mb-4 w-16" aria-hidden="true" />
-              <h2 className="text-3xl font-extrabold text-ipm-ink">Sorotan Terbaru</h2>
-              <p className="mt-2 text-gray-600">
+              <h2 className="text-3xl font-extrabold text-ipm-ink dark:text-gray-100">Sorotan Terbaru</h2>
+              <p className="mt-2 text-gray-600 dark:text-gray-300">
                 Berita, kajian, dan kegiatan terbaru dari kami.
               </p>
             </div>
             <Link
               href="/publikasi"
-              className="hidden shrink-0 rounded-full border-2 border-ipm-green-deep px-5 py-2 text-sm font-semibold text-ipm-green-deep transition-colors hover:bg-ipm-green-deep hover:text-white sm:block"
+              className="hidden shrink-0 rounded-full border-2 border-ipm-green-deep px-5 py-2 text-sm font-semibold text-ipm-green-deep transition-colors hover:bg-ipm-green-deep hover:text-white dark:border-ipm-yellow/70 dark:text-ipm-yellow dark:hover:bg-ipm-yellow dark:hover:text-ipm-green-deep sm:block"
             >
               Lihat Semua
             </Link>
@@ -125,10 +125,10 @@ export default function HomePage() {
 
           {loading ? (
             <div className="grid gap-6 lg:grid-cols-2">
-              <div className="h-96 animate-pulse rounded-2xl bg-gray-200" />
+              <div className="h-96 animate-pulse rounded-2xl bg-gray-200 dark:bg-gray-700" />
               <div className="grid gap-6">
                 {[1, 2, 3].map((n) => (
-                  <div key={n} className="h-28 animate-pulse rounded-2xl bg-gray-200" />
+                  <div key={n} className="h-28 animate-pulse rounded-2xl bg-gray-200 dark:bg-gray-700" />
                 ))}
               </div>
             </div>
@@ -138,9 +138,9 @@ export default function HomePage() {
               {featured && (
                 <Link
                   href={`/publikasi/${featured.folder}/${featured.slug}`}
-                  className="group block overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-shadow hover:shadow-xl"
+                  className="group block overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-shadow hover:shadow-xl dark:bg-gray-800 dark:ring-gray-700"
                 >
-                  <div className="relative aspect-[16/10] w-full bg-gray-100">
+                  <div className="relative aspect-[16/10] w-full bg-gray-100 dark:bg-gray-700">
                     <Image
                       src={gambarSrc(featured)}
                       alt={featured.judul}
@@ -155,13 +155,13 @@ export default function HomePage() {
                     </span>
                   </div>
                   <div className="p-6">
-                    <p className="text-xs text-gray-400">
+                    <p className="text-xs text-gray-500 dark:text-gray-400">
                       {featured.tanggal_formatted || 'Baru saja'}
                     </p>
-                    <h3 className="mt-2 line-clamp-2 text-2xl font-bold text-ipm-ink">
+                    <h3 className="mt-2 line-clamp-2 text-2xl font-bold text-ipm-ink dark:text-gray-100">
                       {featured.judul}
                     </h3>
-                    <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-gray-600">
+                    <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
                       {stripHtml(featured.isi_konten || featured.deskripsi)}
                     </p>
                   </div>
@@ -174,9 +174,9 @@ export default function HomePage() {
                   <Link
                     key={`${item.tipe}-${item.id}`}
                     href={`/publikasi/${item.folder}/${item.slug}`}
-                    className="group flex gap-4 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-gray-200 transition-shadow hover:shadow-lg"
+                    className="group flex gap-4 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-gray-200 transition-shadow hover:shadow-lg dark:bg-gray-800 dark:ring-gray-700"
                   >
-                    <div className="relative h-28 w-36 shrink-0 overflow-hidden rounded-xl bg-gray-100">
+                    <div className="relative h-28 w-36 shrink-0 overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-700">
                       <Image
                         src={gambarSrc(item)}
                         alt={item.judul}
@@ -188,18 +188,18 @@ export default function HomePage() {
                     <div className="min-w-0 py-1">
                       <div className="flex items-center gap-2">
                         <span
-                          className={`rounded-full px-2.5 py-0.5 text-[10px] font-bold ${item.warna}`}
+                          className={`rounded-full px-2.5 py-0.5 text-xs font-bold ${item.warna}`}
                         >
                           {item.tipe}
                         </span>
-                        <span className="text-[10px] text-gray-400">
+                        <span className="text-xs text-gray-500 dark:text-gray-400">
                           {item.tanggal_formatted || 'Baru saja'}
                         </span>
                       </div>
-                      <h3 className="mt-1.5 line-clamp-2 font-bold leading-snug text-ipm-ink">
+                      <h3 className="mt-1.5 line-clamp-2 font-bold leading-snug text-ipm-ink dark:text-gray-100">
                         {item.judul}
                       </h3>
-                      <p className="mt-1 line-clamp-2 text-xs text-gray-500">
+                      <p className="mt-1 line-clamp-2 text-sm text-gray-600 dark:text-gray-300">
                         {stripHtml(item.isi_konten || item.deskripsi)}
                       </p>
                     </div>
@@ -208,13 +208,13 @@ export default function HomePage() {
               </div>
             </div>
           ) : (
-            <div className="rounded-2xl border-2 border-dashed border-gray-300 py-16 text-center text-gray-500">
+            <div className="rounded-2xl border-2 border-dashed border-gray-300 py-16 text-center text-gray-600 dark:border-gray-700 dark:text-gray-300">
               Belum ada publikasi. Nantikan konten dari kami!
             </div>
           )}
 
           <div className="mt-8 text-center sm:hidden">
-            <Link href="/publikasi" className="font-semibold text-ipm-green-deep underline">
+            <Link href="/publikasi" className="font-semibold text-ipm-green-deep underline dark:text-ipm-yellow">
               Lihat semua publikasi
             </Link>
           </div>

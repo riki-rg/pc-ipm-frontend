@@ -37,7 +37,7 @@ export async function generateMetadata() {
 export default function RootLayout({ children }) {
   return (
     <html lang="id" suppressHydrationWarning className={jakarta.variable}>
-      <body className="font-jakarta bg-ipm-paper">
+      <body className="font-jakarta bg-ipm-paper dark:bg-gray-900">
         <NextThemeProvider>{children}</NextThemeProvider>
       </body>
     </html>

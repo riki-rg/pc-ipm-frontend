@@ -35,17 +35,16 @@ export default function DetailBeritaPage({ params }) {
     if (slug) fetchData();
   }, [slug]);
 
-  if (loading) return <div className="min-h-screen flex items-center justify-center">Loading...</div>;
-  if (!data) return <div className="min-h-screen flex items-center justify-center">Berita tidak ditemukan :(</div>;
+  if (loading) return <div className="flex min-h-screen items-center justify-center bg-ipm-paper text-gray-700 dark:bg-gray-900 dark:text-gray-200">Memuat berita…</div>;
+  if (!data) return <div className="flex min-h-screen items-center justify-center bg-ipm-paper px-4 text-center text-gray-700 dark:bg-gray-900 dark:text-gray-200">Berita tidak ditemukan.</div>;
 
   return (
     <div className="min-h-screen bg-ipm-paper pb-20 dark:bg-gray-900">
-      <div className="container mx-auto px-6 pt-6 pb-5">
+      <div className="container mx-auto px-4 pb-5 pt-6 sm:px-6">
         <BackButton />
       </div>
       
-      {/* 1. HEADER GAMBAR FULL WIDTH */}
-      <div className="relative w-full h-[400px] md:h-[500px]">
+      <div className="relative h-[360px] w-full sm:h-[420px] md:h-[500px]">
         {data.gambar_header_url ? (
           <Image
             src={data.gambar_header_url.replace('/uploads/', '/storage/')}
@@ -56,36 +55,35 @@ export default function DetailBeritaPage({ params }) {
             unoptimized
           />
         ) : (
-          <div className="w-full h-full bg-gray-300 flex items-center justify-center">No Image</div>
+          <div className="flex h-full w-full items-center justify-center bg-gray-300 text-gray-700 dark:bg-gray-700 dark:text-gray-200">Gambar belum tersedia.</div>
         )}
-        {/* Overlay Gelap biar tulisan kebaca */}
+        {/* Lapisan gelap menjaga teks tetap terbaca di atas foto. */}
         <div className="absolute inset-0 bg-black/50" />
         
-        <div className="absolute bottom-0 left-0 w-full p-6 md:p-12 container mx-auto">
-          <span className="bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-bold mb-4 inline-block">
+        <div className="container absolute bottom-0 left-0 mx-auto w-full px-4 pb-8 sm:px-6 sm:pb-10 md:pb-12">
+          <span className="mb-4 inline-block rounded-full bg-ipm-yellow px-3 py-1 text-sm font-bold text-ipm-green-deep">
             Berita
           </span>
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
+          <h1 className="mb-4 text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl">
             {data.judul}
           </h1>
           
-          <div className="flex flex-wrap gap-6 text-gray-200 text-sm md:text-base">
+          <div className="flex flex-wrap gap-4 text-sm text-gray-200 sm:gap-6 md:text-base">
             <div className="flex items-center gap-2">
-              <Calendar size={18} />
+              <Calendar aria-hidden="true" size={18} />
               {data.tanggal_formatted}
             </div>
             <div className="flex items-center gap-2">
-              <User size={18} />
+              <User aria-hidden="true" size={18} />
               {data.user?.name || "Admin"}
             </div>
           </div>
         </div>
       </div>
 
-      {/* 2. KONTEN BERITA */}
-      <div className="container mx-auto px-6 py-12 max-w-4xl">
+      <div className="container mx-auto max-w-4xl px-4 py-10 sm:px-6 sm:py-12">
         <article className="prose prose-lg dark:prose-invert max-w-none">
-          {/* Render HTML dari RichEditor Laravel */}
+          {/* Konten berita dari editor. */}
           <div dangerouslySetInnerHTML={{ __html: data.isi_konten }} />
         </article>
       </div>
