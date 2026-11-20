@@ -89,6 +89,7 @@ export default function DetailGaleriPage({ params }) {
               {album.deskripsi}
             </p>
           )}
+          {album.author?.id && <Link href={`/pengurus/${album.author.id}`} className="mt-4 inline-block text-sm font-medium text-white underline decoration-ipm-yellow underline-offset-4">Diunggah oleh {album.author.name}</Link>}
         </div>
       </div>
 

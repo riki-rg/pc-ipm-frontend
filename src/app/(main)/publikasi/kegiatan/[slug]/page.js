@@ -2,6 +2,7 @@
 
 import { useEffect, useState, use } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import axios from 'axios';
 import BackButton from '@/components/BackButton';
 import { Calendar, MapPin, Clock, Users } from 'lucide-react';
@@ -73,6 +74,7 @@ export default function DetailKegiatanPage({ params }) {
                 {data.lokasi}
               </div>
             )}
+            {data.author?.id && <Link href={`/pengurus/${data.author.id}`} className="underline decoration-ipm-yellow underline-offset-4 hover:text-ipm-yellow">Diunggah oleh {data.author.name}</Link>}
           </div>
         </div>
       </div>

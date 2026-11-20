@@ -2,6 +2,7 @@
 
 import { useEffect, useState, use } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import axios from 'axios';
 import { Calendar, MapPin, UserCheck } from 'lucide-react';
 import BackButton from '@/components/BackButton';
@@ -28,6 +29,7 @@ export default function DetailKajianPage({ params }) {
       {data.pemateri && <span className="flex items-center gap-2"><UserCheck size={18} />{data.pemateri}</span>}
       {data.tanggal_formatted && <span className="flex items-center gap-2"><Calendar size={18} />{data.tanggal_formatted}</span>}
       {data.lokasi && <span className="flex items-center gap-2"><MapPin size={18} />{data.lokasi}</span>}
+      {data.author?.id && <Link href={`/pengurus/${data.author.id}`} className="underline decoration-ipm-yellow underline-offset-4 hover:text-ipm-yellow">Diunggah oleh {data.author.name}</Link>}
     </div>
   );
 

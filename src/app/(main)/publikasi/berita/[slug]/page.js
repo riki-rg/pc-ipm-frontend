@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import axios from 'axios';
 import BackButton from '@/components/BackButton';
 import { usePathname } from 'next/navigation'; // Buat ngecek URL
@@ -75,7 +76,7 @@ export default function DetailBeritaPage({ params }) {
             </div>
             <div className="flex items-center gap-2">
               <User aria-hidden="true" size={18} />
-              {data.user?.name || "Admin"}
+              {data.author?.id ? <Link href={`/pengurus/${data.author.id}`} className="underline decoration-ipm-yellow underline-offset-4 hover:text-ipm-yellow">{data.author.name}</Link> : "Tim redaksi"}
             </div>
           </div>
         </div>
