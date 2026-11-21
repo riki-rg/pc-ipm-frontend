@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'; 
 import axios from 'axios';
+import Link from 'next/link';
 import BackButton from '@/components/BackButton';
 import { motion, AnimatePresence } from 'framer-motion'; 
 import AnimatedCounter from '@/components/AnimatedCounter'; 
@@ -166,9 +167,14 @@ export default function TentangPage() {
             <h2 className="text-center text-3xl font-bold text-gray-900 md:text-4xl dark:text-gray-100">
               Struktur Bidang Kami
             </h2>
-            <p className="mb-12 mt-4 text-center text-lg text-gray-600 dark:text-gray-300">
+            <p className="mb-6 mt-4 text-center text-lg text-gray-600 dark:text-gray-300">
               Klik kartu di bawah untuk melihat anggota bidang.
             </p>
+            <div className="mb-12 flex justify-center">
+              <Link href="/pengurus" className="inline-flex min-h-11 items-center justify-center rounded-lg bg-ipm-green-deep px-5 py-3 font-semibold text-white transition hover:bg-ipm-green-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ipm-yellow focus-visible:ring-offset-2">
+                Lihat semua pengurus
+              </Link>
+            </div>
           </motion.div>
 
           {/* GRID KARTU (LOGIC BARU) */}
