@@ -10,6 +10,8 @@ import BackButton from '@/components/BackButton';
 export default function PengurusPage() {
   const [people, setPeople] = useState([]);
   const [query, setQuery] = useState('');
+  const [selectedPeriod, setSelectedPeriod] = useState('');
+  const [selectedField, setSelectedField] = useState('');
   const [loading, setLoading] = useState(true);
   const [failed, setFailed] = useState(false);
 
@@ -22,14 +24,31 @@ export default function PengurusPage() {
       .finally(() => setLoading(false));
   }, []);
 
+  const { periods, fields } = useMemo(() => {
+    const all = [...new Set(people.map((person) => person.periode).filter(Boolean))];
+    const parsed = all.map((period) => ({ period, years: period.match(/\d{4}/g)?.map(Number) || [] }));
+    const newest = parsed.filter(({ years }) => years.length >= 2).sort((a, b) => b.years[0] - a.years[0])[0];
+    if (newest) {
+      const previous = `${newest.years[0] - 2}-${newest.years[1] - 2}`;
+      if (!all.includes(previous)) all.push(previous);
+    }
+    return {
+      periods: all.sort((a, b) => (b.match(/\d{4}/)?.[0] || '').localeCompare(a.match(/\d{4}/)?.[0] || '')),
+      fields: [...new Set(people.map((person) => person.bidang).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'id-ID')),
+    };
+  }, [people]);
+
   const filteredPeople = useMemo(() => {
     const needle = query.trim().toLocaleLowerCase('id-ID');
-    if (!needle) return people;
     return people.filter((person) =>
-      [person.nama_lengkap, person.jabatan, person.bidang, person.periode]
-        .some((value) => value?.toLocaleLowerCase('id-ID').includes(needle))
+      (!selectedPeriod || person.periode === selectedPeriod) &&
+      (!selectedField || person.bidang === selectedField) &&
+      (!needle || [person.nama_lengkap, person.jabatan, person.bidang, person.periode]
+        .some((value) => value?.toLocaleLowerCase('id-ID').includes(needle)))
     );
-  }, [people, query]);
+  }, [people, query, selectedPeriod, selectedField]);
+
+  const filterClass = 'min-h-11 rounded-lg border border-gray-300 bg-white px-3 text-gray-900 dark:border-gray-700 dark:bg-gray-800 dark:text-white';
 
   return (
     <main className="min-h-screen bg-ipm-paper px-4 py-6 dark:bg-gray-900 sm:px-6">
@@ -48,9 +67,25 @@ export default function PengurusPage() {
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Cari nama, jabatan, bidang, atau periode"
+            placeholder="Cari nama, jabatan, atau informasi lain"
             className="min-h-12 w-full rounded-xl border border-gray-300 bg-white py-3 pl-12 pr-4 text-gray-900 outline-none focus:border-ipm-green-deep focus:ring-2 focus:ring-ipm-green-soft/30 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
           />
+        </div>
+        <div className="mt-3 grid gap-3 sm:grid-cols-2">
+          <div>
+            <label htmlFor="filter-periode" className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-200">Periode</label>
+            <select id="filter-periode" value={selectedPeriod} onChange={(event) => setSelectedPeriod(event.target.value)} className={`${filterClass} w-full`}>
+              <option value="">Semua periode</option>
+              {periods.map((period) => <option key={period} value={period}>{period}</option>)}
+            </select>
+          </div>
+          <div>
+            <label htmlFor="filter-bidang" className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-200">Bidang</label>
+            <select id="filter-bidang" value={selectedField} onChange={(event) => setSelectedField(event.target.value)} className={`${filterClass} w-full`}>
+              <option value="">Semua bidang</option>
+              {fields.map((field) => <option key={field} value={field}>{field}</option>)}
+            </select>
+          </div>
         </div>
 
         <p className="mb-4 mt-5 text-sm text-gray-600 dark:text-gray-300" aria-live="polite">
