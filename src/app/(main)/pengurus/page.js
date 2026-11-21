@@ -12,6 +12,7 @@ export default function PengurusPage() {
   const [query, setQuery] = useState('');
   const [selectedPeriod, setSelectedPeriod] = useState('');
   const [selectedField, setSelectedField] = useState('');
+  const [nameOrder, setNameOrder] = useState('asc');
   const [loading, setLoading] = useState(true);
   const [failed, setFailed] = useState(false);
 
@@ -45,8 +46,10 @@ export default function PengurusPage() {
       (!selectedField || person.bidang === selectedField) &&
       (!needle || [person.nama_lengkap, person.jabatan, person.bidang, person.periode]
         .some((value) => value?.toLocaleLowerCase('id-ID').includes(needle)))
-    );
-  }, [people, query, selectedPeriod, selectedField]);
+    ).sort((a, b) => nameOrder === 'asc'
+      ? a.nama_lengkap.localeCompare(b.nama_lengkap, 'id-ID')
+      : b.nama_lengkap.localeCompare(a.nama_lengkap, 'id-ID'));
+  }, [people, query, selectedPeriod, selectedField, nameOrder]);
 
   const filterClass = 'min-h-11 rounded-lg border border-gray-300 bg-white px-3 text-gray-900 dark:border-gray-700 dark:bg-gray-800 dark:text-white';
 
@@ -71,7 +74,14 @@ export default function PengurusPage() {
             className="min-h-12 w-full rounded-xl border border-gray-300 bg-white py-3 pl-12 pr-4 text-gray-900 outline-none focus:border-ipm-green-deep focus:ring-2 focus:ring-ipm-green-soft/30 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
           />
         </div>
-        <div className="mt-3 grid gap-3 sm:grid-cols-2">
+        <div className="mt-3 grid gap-3 sm:grid-cols-3">
+          <div>
+            <label htmlFor="filter-nama" className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-200">Urutkan nama</label>
+            <select id="filter-nama" value={nameOrder} onChange={(event) => setNameOrder(event.target.value)} className={`${filterClass} w-full`}>
+              <option value="asc">A–Z</option>
+              <option value="desc">Z–A</option>
+            </select>
+          </div>
           <div>
             <label htmlFor="filter-periode" className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-200">Periode</label>
             <select id="filter-periode" value={selectedPeriod} onChange={(event) => setSelectedPeriod(event.target.value)} className={`${filterClass} w-full`}>
