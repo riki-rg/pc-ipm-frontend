@@ -3,7 +3,8 @@
 import { use, useEffect, useState } from 'react';
 import Image from 'next/image';
 import axios from 'axios';
-import { Mail, MessageCircle } from 'lucide-react';
+import Link from 'next/link';
+import { Mail, MessageCircle, FileText } from 'lucide-react';
 import BackButton from '@/components/BackButton';
 
 export default function ProfilPengurusPage({ params }) {
@@ -45,6 +46,28 @@ export default function ProfilPengurusPage({ params }) {
           </div>
         </section>
         <p className="mt-4 text-center text-xs text-gray-500 dark:text-gray-400">Kontak diambil dari data Pengurus yang ditampilkan organisasi.</p>
+        <section className="mt-10">
+          <div className="mb-4 flex items-center justify-between gap-3">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white">Unggahan publik</h2>
+            <span className="text-sm text-gray-500 dark:text-gray-400">{person.uploads?.length || 0} unggahan</span>
+          </div>
+          {person.uploads?.length ? (
+            <div className="grid gap-4 sm:grid-cols-2">
+              {person.uploads.map((item) => (
+                <Link key={`${item.type}-${item.url}`} href={item.url} className="group flex gap-4 rounded-xl border border-gray-200 bg-white p-4 transition hover:border-ipm-green-soft hover:shadow-sm dark:border-gray-700 dark:bg-gray-800">
+                  <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-lg bg-ipm-paper dark:bg-gray-700">
+                    {item.image ? <Image src={item.image} alt="" fill className="object-cover" unoptimized /> : <div className="grid h-full place-items-center text-ipm-green-deep dark:text-white"><FileText size={24} /></div>}
+                  </div>
+                  <div className="min-w-0 self-center">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-ipm-green-soft">{item.type}</p>
+                    <h3 className="mt-1 line-clamp-2 font-bold text-gray-900 group-hover:text-ipm-green-deep dark:text-white">{item.title}</h3>
+                    {item.date && <time className="mt-2 block text-xs text-gray-500 dark:text-gray-400">{new Date(`${item.date}T00:00:00`).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}</time>}
+                  </div>
+                </Link>
+              ))}
+            </div>
+          ) : <p className="rounded-xl border border-dashed border-gray-300 p-8 text-center text-gray-500 dark:border-gray-700 dark:text-gray-400">Belum ada unggahan publik.</p>}
+        </section>
       </div>
     </main>
   );
