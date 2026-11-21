@@ -133,6 +133,7 @@ export default function DetailGaleriPage({ params }) {
                 <div aria-hidden="true" className="absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 transition-all duration-300 group-hover:bg-black/30 group-hover:opacity-100">
                   <ZoomIn className="text-white drop-shadow-md" size={32} />
                 </div>
+                {foto.author?.id && <Link href={`/pengurus/${foto.author.id}`} onClick={(event) => event.stopPropagation()} className="absolute bottom-2 left-2 z-10 rounded bg-black/70 px-2 py-1 text-xs font-medium text-white">Diunggah oleh {foto.author.name}</Link>}
               </motion.div>
             ))}
           </div>
